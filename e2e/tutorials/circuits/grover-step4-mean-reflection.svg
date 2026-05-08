@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-16" standalone="no"?>
+<svg id="Diagram-grover1step4meanreflection" class="Diagram svelte-62d3km" x="0" y="0" width="662" height="260" font-family="Arial, sans-serif" font-size="14" fill="black" data-size="662x260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+  </defs>
+  <g class="scaler" transform="scale(1)">
+    <rect class="sizer svelte-62d3km" top="0" left="0" width="662" height="260" fill="white" fill-opacity="0" />
+    <rect class="SVGBackdrop rect  SVGElementBackdrop" x="10" y="10" width="642" height="240" fill="white" stroke="black" stroke-width="1" rx="0" />
+    <g class="SVGText Diagram-title" transform="translate(20 20)" font-size="30" font-weight="bold">
+      <text x="311" y="0" width="572" height="50" text-anchor="middle" dominant-baseline="hanging" fill="inherit">Grover's search algorithm</text>
+    </g>
+    <g data-op-id="x" class="Diagram-Operation register register register:expanded svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex Diagram-Register-label_el" data-align="end/middle/left" transform="translate(25 90)" data-shape="rect">
+        <rect class="SVGBackdrop rect  SVGLatex-backdrop" x="0" y="0" width="18" height="105" fill="white" rx="0" fill-opacity="0" />
+        <g class="SVGLatex-text" color="black" transform="translate(0 48.5) rotate(0)" opacity="1" data-size="10 8">
+          <svg width="9.32px" height="7.38px" role="img" focusable="false" viewBox="0 -442 572 453" style="vertical-align: -0.025ex;">
+            <defs>
+              <path id="MJX-11460-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mi">
+                  <use data-c="1D465" xlink:href="#MJX-11460-TEX-I-1D465">
+                  </use>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+      <path d="M 51 90 Q 47 90 47 116.25 T 43 142.5 M 51 195 Q 47 195 47 168.75 T 43 142.5" stroke="teal" stroke-width="2" stroke-linecap="round" fill="none" />
+      <g class="Diagram-Rail rail rail.qubit" id="x[0]">
+        <g class="SVGLatex Diagram-Rail-labelEl" data-align="end/middle/left" transform="translate(51 90)" data-shape="rect">
+          <g class="SVGLatex-text" color="black" transform="translate(37 11.5) rotate(0)" opacity="1" data-size="9 12">
+            <svg width="8.14px" height="11.21px" role="img" focusable="false" viewBox="0 -666 500 688" style="vertical-align: -0.05ex;">
+              <defs>
+                <path id="MJX-11461-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" />
+              </defs>
+              <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                <g data-mml-node="math">
+                  <g data-mml-node="mn">
+                    <use data-c="30" xlink:href="#MJX-11461-TEX-N-30">
+                    </use>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </g>
+        </g>
+        <line class="allocated" x1="105" x2="133" y1="107.5" y2="107.5" stroke="black" stroke-opacity="0.5" stroke-width="1" stroke-linecap="butt" />
+        <line class="in_use" x1="133" x2="614" y1="107.5" y2="107.5" stroke="black" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" />
+        <line class="classical" x1="614" x2="637" y1="105.5" y2="105.5" stroke="black" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" />
+        <line class="classical" x1="614" x2="637" y1="109.5" y2="109.5" stroke="black" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" />
+      </g>
+      <g class="Diagram-Rail rail rail.qubit" id="x[..._1]">
+        <g class="SVGLatex Diagram-Rail-labelEl" data-align="end/middle/left" transform="translate(51 125)" data-shape="rect">
+          <g class="SVGLatex-text" color="black" transform="translate(41 6.5) rotate(0)" opacity="1" data-size="5 22">
+            <svg width="4.53px" height="21.66px" role="img" focusable="false" viewBox="0 -1300 278 1330" style="vertical-align: -0.068ex;">
+              <defs>
+                <path id="MJX-11462-TEX-N-22EE" d="M78 30Q78 54 95 72T138 90Q162 90 180 74T199 31Q199 6 182 -12T139 -30T96 -13T78 30ZM78 440Q78 464 95 482T138 500Q162 500 180 484T199 441Q199 416 182 398T139 380T96 397T78 440ZM78 840Q78 864 95 882T138 900Q162 900 180 884T199 841Q199 816 182 798T139 780T96 797T78 840Z" />
+              </defs>
+              <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                <g data-mml-node="math">
+                  <g data-mml-node="TeXAtom" data-mjx-texclass="ORD">
+                    <g data-mml-node="mo">
+                      <use data-c="22EE" xlink:href="#MJX-11462-TEX-N-22EE">
+                      </use>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </g>
+        </g>
+        <line class="free" x1="105" x2="637" y1="142.5" y2="142.5" stroke="black" stroke-opacity="1" stroke-width="0" stroke-linecap="butt" />
+      </g>
+      <g class="Diagram-Rail rail rail.qubit" id="x[n-1]">
+        <g class="SVGLatex Diagram-Rail-labelEl" data-align="end/middle/left" transform="translate(51 160)" data-shape="rect">
+          <g class="SVGLatex-text" color="black" transform="translate(8 11) rotate(0)" opacity="1" data-size="38 13">
+            <svg width="37.83px" height="12.18px" role="img" focusable="false" viewBox="0 -666 2322.4 748" style="vertical-align: -0.186ex;">
+              <defs>
+                <path id="MJX-11463-TEX-I-1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z" />
+                <path id="MJX-11463-TEX-N-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z" />
+                <path id="MJX-11463-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" />
+              </defs>
+              <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+                <g data-mml-node="math">
+                  <g data-mml-node="mi">
+                    <use data-c="1D45B" xlink:href="#MJX-11463-TEX-I-1D45B">
+                    </use>
+                  </g>
+                  <g data-mml-node="mo" transform="translate(822.2,0)">
+                    <use data-c="2212" xlink:href="#MJX-11463-TEX-N-2212">
+                    </use>
+                  </g>
+                  <g data-mml-node="mn" transform="translate(1822.4,0)">
+                    <use data-c="31" xlink:href="#MJX-11463-TEX-N-31">
+                    </use>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </g>
+        </g>
+        <line class="allocated" x1="105" x2="133" y1="177.5" y2="177.5" stroke="black" stroke-opacity="0.5" stroke-width="1" stroke-linecap="butt" />
+        <line class="in_use" x1="133" x2="614" y1="177.5" y2="177.5" stroke="black" stroke-opacity="1" stroke-width="2" stroke-linecap="butt" />
+        <line class="classical" x1="614" x2="637" y1="175.5" y2="175.5" stroke="black" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" />
+        <line class="classical" x1="614" x2="637" y1="179.5" y2="179.5" stroke="black" stroke-opacity="1" stroke-width="1" stroke-linecap="butt" />
+      </g>
+    </g>
+    <g data-op-id="gate" class="Diagram-Operation gate gate gate-write svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="Diagram-Glyph gate gate-write svelte-oqktos" transform="translate(110 90)">
+        <rect x="14" y="4" width="28" height="27" fill="white" fill-opacity="1" class="svelte-oqktos" />
+        <path d="M 28 10.75 l 14 6.75 l -14 6.75" fill="white" fill-opacity="1" stroke="black" stroke-width="2" />
+        <g class="SVGText value" transform="translate(14 4)" font-size="12">
+          <rect class="SVGBackdrop rect  " x="0" y="0" width="14" height="27" fill="white" rx="0" />
+          <text x="7" y="14.5" width="10" height="25" text-anchor="middle" dominant-baseline="middle" fill="black">0</text>
+        </g>
+      </g>
+      <g class="Diagram-Glyph gate-vdots svelte-oqktos" transform="translate(110 125)">
+        <circle cx="23" cy="11.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+        <circle cx="23" cy="17.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+        <circle cx="23" cy="23.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+      </g>
+      <g class="Diagram-Glyph gate gate-write svelte-oqktos" transform="translate(110 160)">
+        <rect x="14" y="4" width="28" height="27" fill="white" fill-opacity="1" class="svelte-oqktos" />
+        <path d="M 28 10.75 l 14 6.75 l -14 6.75" fill="white" fill-opacity="1" stroke="black" stroke-width="2" />
+        <g class="SVGText value" transform="translate(14 4)" font-size="12">
+          <rect class="SVGBackdrop rect  " x="0" y="0" width="14" height="27" fill="white" rx="0" />
+          <text x="7" y="14.5" width="10" height="25" text-anchor="middle" dominant-baseline="middle" fill="black">0</text>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine" class="Diagram-Operation routine operation operation:collapsed routine routine:collapsed svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/middle/left" transform="translate(161 92)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="50" height="97" fill="white" stroke="black" stroke-width="1" rx="6" />
+        <g class="SVGLatex-text" color="black" transform="translate(5 21) rotate(0)" opacity="1" data-size="40 59">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="44" height="63" fill="white" fill-opacity="0" rx="6" ry="6" />
+          <svg width="39.37px" height="58.64px" role="img" focusable="false" viewBox="0 -2050 2417 3600" style="vertical-align: -3.507ex;">
+            <defs>
+              <path id="MJX-11483-TEX-N-4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z" />
+              <path id="MJX-11483-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11483-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11483-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11483-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
+              <path id="MJX-11483-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11483-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" />
+              <path id="MJX-11483-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtable">
+                  <g data-mml-node="mtr" transform="translate(0,1300)">
+                    <g data-mml-node="mtd">
+                      <g data-mml-node="mtext">
+                        <use data-c="4D" xlink:href="#MJX-11483-TEX-N-4D">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11483-TEX-N-65" transform="translate(917,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11483-TEX-N-61" transform="translate(1361,0)">
+                        </use>
+                        <use data-c="6E" xlink:href="#MJX-11483-TEX-N-6E" transform="translate(1861,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,0)">
+                    <g data-mml-node="mtd" transform="translate(150.5,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="73" xlink:href="#MJX-11483-TEX-N-73">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11483-TEX-N-74" transform="translate(394,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11483-TEX-N-61" transform="translate(783,0)">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11483-TEX-N-74" transform="translate(1283,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11483-TEX-N-65" transform="translate(1672,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,-1300)">
+                    <g data-mml-node="mtd" transform="translate(234.5,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="70" xlink:href="#MJX-11483-TEX-N-70">
+                        </use>
+                        <use data-c="72" xlink:href="#MJX-11483-TEX-N-72" transform="translate(556,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11483-TEX-N-65" transform="translate(948,0)">
+                        </use>
+                        <use data-c="70" xlink:href="#MJX-11483-TEX-N-70" transform="translate(1392,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="group" class="Diagram-Operation group operation group svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/top/left" transform="translate(216 90)" data-shape="rect">
+        <rect class="SVGBackdrop rect  SVGLatex-backdrop" x="6" y="-4" width="368" height="113" fill="white" stroke="black" stroke-width="1.5" stroke-dasharray="4 6" stroke-linecap="square" rx="0" fill-opacity="0" />
+        <g class="SVGLatex-text" color="black" transform="translate(74 -19) rotate(0)" opacity="1" data-size="232 15">
+          <svg width="231.16px" height="14.64px" role="img" focusable="false" viewBox="0 -705 14191 899" style="vertical-align: -0.439ex;">
+            <defs>
+              <path id="MJX-11484-TEX-N-47" d="M56 342Q56 428 89 500T174 615T283 681T391 705Q394 705 400 705T408 704Q499 704 569 636L582 624L612 663Q639 700 643 704Q644 704 647 704T653 705H657Q660 705 666 699V419L660 413H626Q620 419 619 430Q610 512 571 572T476 651Q457 658 426 658Q401 658 376 654T316 633T254 592T205 519T177 411Q173 369 173 335Q173 259 192 201T238 111T302 58T370 31T431 24Q478 24 513 45T559 100Q562 110 562 160V212Q561 213 557 216T551 220T542 223T526 225T502 226T463 227H437V273H449L609 270Q715 270 727 273H735V227H721Q674 227 668 215Q666 211 666 108V6Q660 0 657 0Q653 0 639 10Q617 25 600 42L587 54Q571 27 524 3T406 -22Q317 -22 238 22T108 151T56 342Z" />
+              <path id="MJX-11484-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+              <path id="MJX-11484-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" />
+              <path id="MJX-11484-TEX-N-76" d="M338 431Q344 429 422 429Q479 429 503 431H508V385H497Q439 381 423 345Q421 341 356 172T288 -2Q283 -11 263 -11Q244 -11 239 -2Q99 359 98 364Q93 378 82 381T43 385H19V431H25L33 430Q41 430 53 430T79 430T104 429T122 428Q217 428 232 431H240V385H226Q187 384 184 370Q184 366 235 234L286 102L377 341V349Q377 363 367 372T349 383T335 385H331V431H338Z" />
+              <path id="MJX-11484-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11484-TEX-N-20" d="" />
+              <path id="MJX-11484-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" />
+              <path id="MJX-11484-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11484-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11484-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11484-TEX-N-2D" d="M11 179V252H277V179H11Z" />
+              <path id="MJX-11484-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" />
+              <path id="MJX-11484-TEX-N-4B" d="M128 622Q121 629 117 631T101 634T58 637H25V683H36Q57 680 180 680Q315 680 324 683H335V637H313Q235 637 233 620Q232 618 232 462L233 307L379 449Q425 494 479 546Q518 584 524 591T531 607V608Q531 630 503 636Q501 636 498 636T493 637H489V683H499Q517 680 630 680Q704 680 716 683H722V637H708Q633 633 589 597Q584 592 495 506T406 419T515 254T631 80Q644 60 662 54T715 46H736V0H728Q719 3 615 3Q493 3 472 0H461V46H469Q515 46 515 72Q515 78 512 84L336 351Q332 348 278 296L232 251V156Q232 62 235 58Q243 47 302 46H335V0H324Q303 3 180 3Q45 3 36 0H25V46H58Q100 47 109 49T128 61V622Z" />
+              <path id="MJX-11484-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11484-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtext">
+                  <use data-c="47" xlink:href="#MJX-11484-TEX-N-47">
+                  </use>
+                  <use data-c="72" xlink:href="#MJX-11484-TEX-N-72" transform="translate(785,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11484-TEX-N-6F" transform="translate(1177,0)">
+                  </use>
+                  <use data-c="76" xlink:href="#MJX-11484-TEX-N-76" transform="translate(1677,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11484-TEX-N-65" transform="translate(2205,0)">
+                  </use>
+                  <use data-c="72" xlink:href="#MJX-11484-TEX-N-72" transform="translate(2649,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11484-TEX-N-20" transform="translate(3041,0)">
+                  </use>
+                  <use data-c="69" xlink:href="#MJX-11484-TEX-N-69" transform="translate(3291,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11484-TEX-N-74" transform="translate(3569,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11484-TEX-N-65" transform="translate(3958,0)">
+                  </use>
+                  <use data-c="72" xlink:href="#MJX-11484-TEX-N-72" transform="translate(4402,0)">
+                  </use>
+                  <use data-c="61" xlink:href="#MJX-11484-TEX-N-61" transform="translate(4794,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11484-TEX-N-74" transform="translate(5294,0)">
+                  </use>
+                  <use data-c="69" xlink:href="#MJX-11484-TEX-N-69" transform="translate(5683,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11484-TEX-N-6F" transform="translate(5961,0)">
+                  </use>
+                  <use data-c="6E" xlink:href="#MJX-11484-TEX-N-6E" transform="translate(6461,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11484-TEX-N-20" transform="translate(7017,0)">
+                  </use>
+                  <use data-c="2D" xlink:href="#MJX-11484-TEX-N-2D" transform="translate(7267,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11484-TEX-N-20" transform="translate(7600,0)">
+                  </use>
+                  <use data-c="72" xlink:href="#MJX-11484-TEX-N-72" transform="translate(7850,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11484-TEX-N-65" transform="translate(8242,0)">
+                  </use>
+                  <use data-c="70" xlink:href="#MJX-11484-TEX-N-70" transform="translate(8686,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11484-TEX-N-65" transform="translate(9242,0)">
+                  </use>
+                  <use data-c="61" xlink:href="#MJX-11484-TEX-N-61" transform="translate(9686,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11484-TEX-N-74" transform="translate(10186,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11484-TEX-N-20" transform="translate(10575,0)">
+                  </use>
+                  <use data-c="4B" xlink:href="#MJX-11484-TEX-N-4B" transform="translate(10825,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11484-TEX-N-20" transform="translate(11603,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11484-TEX-N-74" transform="translate(11853,0)">
+                  </use>
+                  <use data-c="69" xlink:href="#MJX-11484-TEX-N-69" transform="translate(12242,0)">
+                  </use>
+                  <use data-c="6D" xlink:href="#MJX-11484-TEX-N-6D" transform="translate(12520,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11484-TEX-N-65" transform="translate(13353,0)">
+                  </use>
+                  <use data-c="73" xlink:href="#MJX-11484-TEX-N-73" transform="translate(13797,0)">
+                  </use>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine2" class="Diagram-Operation routine operation operation:collapsed routine routine:collapsed svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/middle/left" transform="translate(227 92)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="52" height="97" fill="white" stroke="black" stroke-width="1" rx="6" />
+        <g class="SVGLatex-text" color="black" transform="translate(5 31.5) rotate(0)" opacity="1" data-size="42 38">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="46" height="42" fill="white" fill-opacity="0" rx="6" ry="6" />
+          <svg width="41.95px" height="37.47px" role="img" focusable="false" viewBox="0 -1400 2575 2300" style="vertical-align: -2.036ex;">
+            <defs>
+              <path id="MJX-11485-TEX-N-50" d="M130 622Q123 629 119 631T103 634T60 637H27V683H214Q237 683 276 683T331 684Q419 684 471 671T567 616Q624 563 624 489Q624 421 573 372T451 307Q429 302 328 301H234V181Q234 62 237 58Q245 47 304 46H337V0H326Q305 3 182 3Q47 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM507 488Q507 514 506 528T500 564T483 597T450 620T397 635Q385 637 307 637H286Q237 637 234 628Q231 624 231 483V342H302H339Q390 342 423 349T481 382Q507 411 507 488Z" />
+              <path id="MJX-11485-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11485-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11485-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
+              <path id="MJX-11485-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11485-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" />
+              <path id="MJX-11485-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+              <path id="MJX-11485-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" />
+              <path id="MJX-11485-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtable">
+                  <g data-mml-node="mtr" transform="translate(0,650)">
+                    <g data-mml-node="mtd">
+                      <g data-mml-node="mtext">
+                        <use data-c="50" xlink:href="#MJX-11485-TEX-N-50">
+                        </use>
+                        <use data-c="68" xlink:href="#MJX-11485-TEX-N-68" transform="translate(681,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11485-TEX-N-61" transform="translate(1237,0)">
+                        </use>
+                        <use data-c="73" xlink:href="#MJX-11485-TEX-N-73" transform="translate(1737,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11485-TEX-N-65" transform="translate(2131,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,-650)">
+                    <g data-mml-node="mtd" transform="translate(8.5,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="6F" xlink:href="#MJX-11485-TEX-N-6F">
+                        </use>
+                        <use data-c="72" xlink:href="#MJX-11485-TEX-N-72" transform="translate(500,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11485-TEX-N-61" transform="translate(892,0)">
+                        </use>
+                        <use data-c="63" xlink:href="#MJX-11485-TEX-N-63" transform="translate(1392,0)">
+                        </use>
+                        <use data-c="6C" xlink:href="#MJX-11485-TEX-N-6C" transform="translate(1836,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11485-TEX-N-65" transform="translate(2114,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine3" class="Diagram-Operation routine operation operation:expanded operation.expand-text-above operation.expand-text-above:expanded routine routine:expanded routine.expand-text-above routine.expand-text-above:expanded svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/top/left" transform="translate(289 89)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="296" height="103" fill="white" stroke="black" stroke-width="1" rx="6" style="mix-blend-mode: darken" fill-opacity="0" />
+        <g class="SVGLatex-text" color="black" transform="translate(55.5 -16) rotate(0)" opacity="1" data-size="185 12">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="189" height="16" fill="white" fill-opacity="1" rx="5" ry="5" />
+          <svg width="184.85px" height="11.84px" role="img" focusable="false" viewBox="0 -705 11348 727" style="vertical-align: -0.05ex;">
+            <defs>
+              <path id="MJX-11486-TEX-N-52" d="M130 622Q123 629 119 631T103 634T60 637H27V683H202H236H300Q376 683 417 677T500 648Q595 600 609 517Q610 512 610 501Q610 468 594 439T556 392T511 361T472 343L456 338Q459 335 467 332Q497 316 516 298T545 254T559 211T568 155T578 94Q588 46 602 31T640 16H645Q660 16 674 32T692 87Q692 98 696 101T712 105T728 103T732 90Q732 59 716 27T672 -16Q656 -22 630 -22Q481 -16 458 90Q456 101 456 163T449 246Q430 304 373 320L363 322L297 323H231V192L232 61Q238 51 249 49T301 46H334V0H323Q302 3 181 3Q59 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM491 499V509Q491 527 490 539T481 570T462 601T424 623T362 636Q360 636 340 636T304 637H283Q238 637 234 628Q231 624 231 492V360H289Q390 360 434 378T489 456Q491 467 491 499Z" />
+              <path id="MJX-11486-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11486-TEX-N-66" d="M273 0Q255 3 146 3Q43 3 34 0H26V46H42Q70 46 91 49Q99 52 103 60Q104 62 104 224V385H33V431H104V497L105 564L107 574Q126 639 171 668T266 704Q267 704 275 704T289 705Q330 702 351 679T372 627Q372 604 358 590T321 576T284 590T270 627Q270 647 288 667H284Q280 668 273 668Q245 668 223 647T189 592Q183 572 182 497V431H293V385H185V225Q185 63 186 61T189 57T194 54T199 51T206 49T213 48T222 47T231 47T241 46T251 46H282V0H273Z" />
+              <path id="MJX-11486-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" />
+              <path id="MJX-11486-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" />
+              <path id="MJX-11486-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11486-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" />
+              <path id="MJX-11486-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" />
+              <path id="MJX-11486-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11486-TEX-N-20" d="" />
+              <path id="MJX-11486-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11486-TEX-N-62" d="M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z" />
+              <path id="MJX-11486-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z" />
+              <path id="MJX-11486-TEX-N-68" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 124T102 167T103 217T103 272T103 329Q103 366 103 407T103 482T102 542T102 586T102 603Q99 622 88 628T43 637H25V660Q25 683 27 683L37 684Q47 685 66 686T103 688Q120 689 140 690T170 693T181 694H184V367Q244 442 328 442Q451 442 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11486-TEX-N-6D" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q351 442 364 440T387 434T406 426T421 417T432 406T441 395T448 384T452 374T455 366L457 361L460 365Q463 369 466 373T475 384T488 397T503 410T523 422T546 432T572 439T603 442Q729 442 740 329Q741 322 741 190V104Q741 66 743 59T754 49Q775 46 803 46H819V0H811L788 1Q764 2 737 2T699 3Q596 3 587 0H579V46H595Q656 46 656 62Q657 64 657 200Q656 335 655 343Q649 371 635 385T611 402T585 404Q540 404 506 370Q479 343 472 315T464 232V168V108Q464 78 465 68T468 55T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtext">
+                  <use data-c="52" xlink:href="#MJX-11486-TEX-N-52">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11486-TEX-N-65" transform="translate(736,0)">
+                  </use>
+                  <use data-c="66" xlink:href="#MJX-11486-TEX-N-66" transform="translate(1180,0)">
+                  </use>
+                  <use data-c="6C" xlink:href="#MJX-11486-TEX-N-6C" transform="translate(1486,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11486-TEX-N-65" transform="translate(1764,0)">
+                  </use>
+                  <use data-c="63" xlink:href="#MJX-11486-TEX-N-63" transform="translate(2208,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11486-TEX-N-74" transform="translate(2652,0)">
+                  </use>
+                  <use data-c="69" xlink:href="#MJX-11486-TEX-N-69" transform="translate(3041,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11486-TEX-N-6F" transform="translate(3319,0)">
+                  </use>
+                  <use data-c="6E" xlink:href="#MJX-11486-TEX-N-6E" transform="translate(3819,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11486-TEX-N-20" transform="translate(4375,0)">
+                  </use>
+                  <use data-c="61" xlink:href="#MJX-11486-TEX-N-61" transform="translate(4625,0)">
+                  </use>
+                  <use data-c="62" xlink:href="#MJX-11486-TEX-N-62" transform="translate(5125,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11486-TEX-N-6F" transform="translate(5681,0)">
+                  </use>
+                  <use data-c="75" xlink:href="#MJX-11486-TEX-N-75" transform="translate(6181,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11486-TEX-N-74" transform="translate(6737,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11486-TEX-N-20" transform="translate(7126,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11486-TEX-N-74" transform="translate(7376,0)">
+                  </use>
+                  <use data-c="68" xlink:href="#MJX-11486-TEX-N-68" transform="translate(7765,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11486-TEX-N-65" transform="translate(8321,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11486-TEX-N-20" transform="translate(8765,0)">
+                  </use>
+                  <use data-c="6D" xlink:href="#MJX-11486-TEX-N-6D" transform="translate(9015,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11486-TEX-N-65" transform="translate(9848,0)">
+                  </use>
+                  <use data-c="61" xlink:href="#MJX-11486-TEX-N-61" transform="translate(10292,0)">
+                  </use>
+                  <use data-c="6E" xlink:href="#MJX-11486-TEX-N-6E" transform="translate(10792,0)">
+                  </use>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine4" class="Diagram-Operation routine operation operation:collapsed routine routine:collapsed svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/middle/left" transform="translate(299 92)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="56" height="97" fill="white" stroke="black" stroke-width="1" rx="6" />
+        <g class="SVGLatex-text" color="black" transform="translate(5 19.5) rotate(0)" opacity="1" data-size="46 62">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="50" height="66" fill="white" fill-opacity="0" rx="6" ry="6" />
+          <svg width="45.84px" height="61.27px" role="img" focusable="false" viewBox="0 -2130.8 2814 3761.5" style="vertical-align: -3.689ex;">
+            <defs>
+              <path id="MJX-11487-TEX-N-4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z" />
+              <path id="MJX-11487-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11487-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11487-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11487-TEX-N-2020" d="M182 675Q195 705 222 705Q234 705 243 700T253 691T263 675L262 655Q262 620 252 549T240 454V449Q250 451 288 461T346 472T377 461T389 431Q389 417 379 404T346 390Q327 390 288 401T243 412H240V405Q245 367 250 339T258 301T261 274T263 225Q263 124 255 -41T239 -213Q236 -216 222 -216H217Q206 -216 204 -212T200 -186Q199 -175 199 -168Q181 38 181 225Q181 265 182 280T191 327T204 405V412H201Q196 412 157 401T98 390Q76 390 66 403T55 431T65 458T98 472Q116 472 155 462T205 449Q204 452 204 460T201 490T193 547Q182 619 182 655V675Z" />
+              <path id="MJX-11487-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
+              <path id="MJX-11487-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11487-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" />
+              <path id="MJX-11487-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtable">
+                  <g data-mml-node="mtr" transform="translate(0,1219.2)">
+                    <g data-mml-node="mtd">
+                      <g data-mml-node="msup">
+                        <g data-mml-node="mtext">
+                          <use data-c="4D" xlink:href="#MJX-11487-TEX-N-4D">
+                          </use>
+                          <use data-c="65" xlink:href="#MJX-11487-TEX-N-65" transform="translate(917,0)">
+                          </use>
+                          <use data-c="61" xlink:href="#MJX-11487-TEX-N-61" transform="translate(1361,0)">
+                          </use>
+                          <use data-c="6E" xlink:href="#MJX-11487-TEX-N-6E" transform="translate(1861,0)">
+                          </use>
+                        </g>
+                        <g data-mml-node="mo" transform="translate(2450,413) scale(0.707)">
+                          <use data-c="2020" xlink:href="#MJX-11487-TEX-N-2020">
+                          </use>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,-80.8)">
+                    <g data-mml-node="mtd" transform="translate(349,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="73" xlink:href="#MJX-11487-TEX-N-73">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11487-TEX-N-74" transform="translate(394,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11487-TEX-N-61" transform="translate(783,0)">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11487-TEX-N-74" transform="translate(1283,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11487-TEX-N-65" transform="translate(1672,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,-1380.8)">
+                    <g data-mml-node="mtd" transform="translate(433,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="70" xlink:href="#MJX-11487-TEX-N-70">
+                        </use>
+                        <use data-c="72" xlink:href="#MJX-11487-TEX-N-72" transform="translate(556,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11487-TEX-N-65" transform="translate(948,0)">
+                        </use>
+                        <use data-c="70" xlink:href="#MJX-11487-TEX-N-70" transform="translate(1392,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine5" class="Diagram-Operation routine operation operation:collapsed routine routine:collapsed svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/middle/left" transform="translate(365 92)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="150" height="97" fill="white" stroke="black" stroke-width="1" rx="6" />
+        <g class="SVGLatex-text" color="black" transform="translate(5 42) rotate(0)" opacity="1" data-size="140 17">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="144" height="21" fill="white" fill-opacity="0" rx="6" ry="6" />
+          <svg width="139.16px" height="16.29px" role="img" focusable="false" viewBox="0 -750 8543 1000" style="vertical-align: -0.566ex;">
+            <defs>
+              <path id="MJX-11488-TEX-N-52" d="M130 622Q123 629 119 631T103 634T60 637H27V683H202H236H300Q376 683 417 677T500 648Q595 600 609 517Q610 512 610 501Q610 468 594 439T556 392T511 361T472 343L456 338Q459 335 467 332Q497 316 516 298T545 254T559 211T568 155T578 94Q588 46 602 31T640 16H645Q660 16 674 32T692 87Q692 98 696 101T712 105T728 103T732 90Q732 59 716 27T672 -16Q656 -22 630 -22Q481 -16 458 90Q456 101 456 163T449 246Q430 304 373 320L363 322L297 323H231V192L232 61Q238 51 249 49T301 46H334V0H323Q302 3 181 3Q59 3 38 0H27V46H60Q102 47 111 49T130 61V622ZM491 499V509Q491 527 490 539T481 570T462 601T424 623T362 636Q360 636 340 636T304 637H283Q238 637 234 628Q231 624 231 492V360H289Q390 360 434 378T489 456Q491 467 491 499Z" />
+              <path id="MJX-11488-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11488-TEX-N-66" d="M273 0Q255 3 146 3Q43 3 34 0H26V46H42Q70 46 91 49Q99 52 103 60Q104 62 104 224V385H33V431H104V497L105 564L107 574Q126 639 171 668T266 704Q267 704 275 704T289 705Q330 702 351 679T372 627Q372 604 358 590T321 576T284 590T270 627Q270 647 288 667H284Q280 668 273 668Q245 668 223 647T189 592Q183 572 182 497V431H293V385H185V225Q185 63 186 61T189 57T194 54T199 51T206 49T213 48T222 47T231 47T241 46T251 46H282V0H273Z" />
+              <path id="MJX-11488-TEX-N-6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z" />
+              <path id="MJX-11488-TEX-N-63" d="M370 305T349 305T313 320T297 358Q297 381 312 396Q317 401 317 402T307 404Q281 408 258 408Q209 408 178 376Q131 329 131 219Q131 137 162 90Q203 29 272 29Q313 29 338 55T374 117Q376 125 379 127T395 129H409Q415 123 415 120Q415 116 411 104T395 71T366 33T318 2T249 -11Q163 -11 99 53T34 214Q34 318 99 383T250 448T370 421T404 357Q404 334 387 320Z" />
+              <path id="MJX-11488-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11488-TEX-N-69" d="M69 609Q69 637 87 653T131 669Q154 667 171 652T188 609Q188 579 171 564T129 549Q104 549 87 564T69 609ZM247 0Q232 3 143 3Q132 3 106 3T56 1L34 0H26V46H42Q70 46 91 49Q100 53 102 60T104 102V205V293Q104 345 102 359T88 378Q74 385 41 385H30V408Q30 431 32 431L42 432Q52 433 70 434T106 436Q123 437 142 438T171 441T182 442H185V62Q190 52 197 50T232 46H255V0H247Z" />
+              <path id="MJX-11488-TEX-N-6F" d="M28 214Q28 309 93 378T250 448Q340 448 405 380T471 215Q471 120 407 55T250 -10Q153 -10 91 57T28 214ZM250 30Q372 30 372 193V225V250Q372 272 371 288T364 326T348 362T317 390T268 410Q263 411 252 411Q222 411 195 399Q152 377 139 338T126 246V226Q126 130 145 91Q177 30 250 30Z" />
+              <path id="MJX-11488-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11488-TEX-N-20" d="" />
+              <path id="MJX-11488-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11488-TEX-N-62" d="M307 -11Q234 -11 168 55L158 37Q156 34 153 28T147 17T143 10L138 1L118 0H98V298Q98 599 97 603Q94 622 83 628T38 637H20V660Q20 683 22 683L32 684Q42 685 61 686T98 688Q115 689 135 690T165 693T176 694H179V543Q179 391 180 391L183 394Q186 397 192 401T207 411T228 421T254 431T286 439T323 442Q401 442 461 379T522 216Q522 115 458 52T307 -11ZM182 98Q182 97 187 90T196 79T206 67T218 55T233 44T250 35T271 29T295 26Q330 26 363 46T412 113Q424 148 424 212Q424 287 412 323Q385 405 300 405Q270 405 239 390T188 347L182 339V98Z" />
+              <path id="MJX-11488-TEX-N-75" d="M383 58Q327 -10 256 -10H249Q124 -10 105 89Q104 96 103 226Q102 335 102 348T96 369Q86 385 36 385H25V408Q25 431 27 431L38 432Q48 433 67 434T105 436Q122 437 142 438T172 441T184 442H187V261Q188 77 190 64Q193 49 204 40Q224 26 264 26Q290 26 311 35T343 58T363 90T375 120T379 144Q379 145 379 161T380 201T380 248V315Q380 361 370 372T320 385H302V431Q304 431 378 436T457 442H464V264Q464 84 465 81Q468 61 479 55T524 46H542V0Q540 0 467 -5T390 -11H383V58Z" />
+              <path id="MJX-11488-TEX-N-A0" d="" />
+              <path id="MJX-11488-TEX-N-7C" d="M139 -249H137Q125 -249 119 -235V251L120 737Q130 750 139 750Q152 750 159 735V-235Q151 -249 141 -249H139Z" />
+              <path id="MJX-11488-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" />
+              <path id="MJX-11488-TEX-N-27E9" d="M55 732Q56 739 61 744T75 750Q85 750 92 740Q95 733 186 494T278 250T187 6T92 -240Q85 -250 75 -250Q67 -250 62 -245T55 -232Q55 -227 145 11Q236 248 236 250T145 489Q55 727 55 732Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtext">
+                  <use data-c="52" xlink:href="#MJX-11488-TEX-N-52">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11488-TEX-N-65" transform="translate(736,0)">
+                  </use>
+                  <use data-c="66" xlink:href="#MJX-11488-TEX-N-66" transform="translate(1180,0)">
+                  </use>
+                  <use data-c="6C" xlink:href="#MJX-11488-TEX-N-6C" transform="translate(1486,0)">
+                  </use>
+                  <use data-c="65" xlink:href="#MJX-11488-TEX-N-65" transform="translate(1764,0)">
+                  </use>
+                  <use data-c="63" xlink:href="#MJX-11488-TEX-N-63" transform="translate(2208,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11488-TEX-N-74" transform="translate(2652,0)">
+                  </use>
+                  <use data-c="69" xlink:href="#MJX-11488-TEX-N-69" transform="translate(3041,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11488-TEX-N-6F" transform="translate(3319,0)">
+                  </use>
+                  <use data-c="6E" xlink:href="#MJX-11488-TEX-N-6E" transform="translate(3819,0)">
+                  </use>
+                  <use data-c="20" xlink:href="#MJX-11488-TEX-N-20" transform="translate(4375,0)">
+                  </use>
+                  <use data-c="61" xlink:href="#MJX-11488-TEX-N-61" transform="translate(4625,0)">
+                  </use>
+                  <use data-c="62" xlink:href="#MJX-11488-TEX-N-62" transform="translate(5125,0)">
+                  </use>
+                  <use data-c="6F" xlink:href="#MJX-11488-TEX-N-6F" transform="translate(5681,0)">
+                  </use>
+                  <use data-c="75" xlink:href="#MJX-11488-TEX-N-75" transform="translate(6181,0)">
+                  </use>
+                  <use data-c="74" xlink:href="#MJX-11488-TEX-N-74" transform="translate(6737,0)">
+                  </use>
+                  <use data-c="A0" xlink:href="#MJX-11488-TEX-N-A0" transform="translate(7126,0)">
+                  </use>
+                </g>
+                <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(7376,0)">
+                  <g data-mml-node="mo" transform="translate(0 -0.5)">
+                    <use data-c="7C" xlink:href="#MJX-11488-TEX-N-7C">
+                    </use>
+                  </g>
+                  <g data-mml-node="TeXAtom" data-mjx-texclass="ORD" transform="translate(278,0)">
+                    <g data-mml-node="mn">
+                      <use data-c="30" xlink:href="#MJX-11488-TEX-N-30">
+                      </use>
+                    </g>
+                  </g>
+                  <g data-mml-node="mo" transform="translate(778,0)">
+                    <use data-c="27E9" xlink:href="#MJX-11488-TEX-N-27E9">
+                    </use>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="routine6" class="Diagram-Operation routine operation operation:collapsed routine routine:collapsed svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="SVGLatex " data-align="middle/middle/left" transform="translate(525 92)" data-shape="round_rect">
+        <rect class="SVGBackdrop round_rect  SVGLatex-backdrop" x="0" y="2" width="50" height="97" fill="white" stroke="black" stroke-width="1" rx="6" />
+        <g class="SVGLatex-text" color="black" transform="translate(5 21) rotate(0)" opacity="1" data-size="40 59">
+          <rect class="SVGLatex-text_mask" x="-2" y="-2" width="44" height="63" fill="white" fill-opacity="0" rx="6" ry="6" />
+          <svg width="39.37px" height="58.64px" role="img" focusable="false" viewBox="0 -2050 2417 3600" style="vertical-align: -3.507ex;">
+            <defs>
+              <path id="MJX-11489-TEX-N-4D" d="M132 622Q125 629 121 631T105 634T62 637H29V683H135Q221 683 232 682T249 675Q250 674 354 398L458 124L562 398Q666 674 668 675Q671 681 683 682T781 683H887V637H854Q814 636 803 634T785 622V61Q791 51 802 49T854 46H887V0H876Q855 3 736 3Q605 3 596 0H585V46H618Q660 47 669 49T688 61V347Q688 424 688 461T688 546T688 613L687 632Q454 14 450 7Q446 1 430 1T410 7Q409 9 292 316L176 624V606Q175 588 175 543T175 463T175 356L176 86Q187 50 261 46H278V0H269Q254 3 154 3Q52 3 37 0H29V46H46Q78 48 98 56T122 69T132 86V622Z" />
+              <path id="MJX-11489-TEX-N-65" d="M28 218Q28 273 48 318T98 391T163 433T229 448Q282 448 320 430T378 380T406 316T415 245Q415 238 408 231H126V216Q126 68 226 36Q246 30 270 30Q312 30 342 62Q359 79 369 104L379 128Q382 131 395 131H398Q415 131 415 121Q415 117 412 108Q393 53 349 21T250 -11Q155 -11 92 58T28 218ZM333 275Q322 403 238 411H236Q228 411 220 410T195 402T166 381T143 340T127 274V267H333V275Z" />
+              <path id="MJX-11489-TEX-N-61" d="M137 305T115 305T78 320T63 359Q63 394 97 421T218 448Q291 448 336 416T396 340Q401 326 401 309T402 194V124Q402 76 407 58T428 40Q443 40 448 56T453 109V145H493V106Q492 66 490 59Q481 29 455 12T400 -6T353 12T329 54V58L327 55Q325 52 322 49T314 40T302 29T287 17T269 6T247 -2T221 -8T190 -11Q130 -11 82 20T34 107Q34 128 41 147T68 188T116 225T194 253T304 268H318V290Q318 324 312 340Q290 411 215 411Q197 411 181 410T156 406T148 403Q170 388 170 359Q170 334 154 320ZM126 106Q126 75 150 51T209 26Q247 26 276 49T315 109Q317 116 318 175Q318 233 317 233Q309 233 296 232T251 223T193 203T147 166T126 106Z" />
+              <path id="MJX-11489-TEX-N-6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" />
+              <path id="MJX-11489-TEX-N-73" d="M295 316Q295 356 268 385T190 414Q154 414 128 401Q98 382 98 349Q97 344 98 336T114 312T157 287Q175 282 201 278T245 269T277 256Q294 248 310 236T342 195T359 133Q359 71 321 31T198 -10H190Q138 -10 94 26L86 19L77 10Q71 4 65 -1L54 -11H46H42Q39 -11 33 -5V74V132Q33 153 35 157T45 162H54Q66 162 70 158T75 146T82 119T101 77Q136 26 198 26Q295 26 295 104Q295 133 277 151Q257 175 194 187T111 210Q75 227 54 256T33 318Q33 357 50 384T93 424T143 442T187 447H198Q238 447 268 432L283 424L292 431Q302 440 314 448H322H326Q329 448 335 442V310L329 304H301Q295 310 295 316Z" />
+              <path id="MJX-11489-TEX-N-74" d="M27 422Q80 426 109 478T141 600V615H181V431H316V385H181V241Q182 116 182 100T189 68Q203 29 238 29Q282 29 292 100Q293 108 293 146V181H333V146V134Q333 57 291 17Q264 -10 221 -10Q187 -10 162 2T124 33T105 68T98 100Q97 107 97 248V385H18V422H27Z" />
+              <path id="MJX-11489-TEX-N-70" d="M36 -148H50Q89 -148 97 -134V-126Q97 -119 97 -107T97 -77T98 -38T98 6T98 55T98 106Q98 140 98 177T98 243T98 296T97 335T97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 61 434T98 436Q115 437 135 438T165 441T176 442H179V416L180 390L188 397Q247 441 326 441Q407 441 464 377T522 216Q522 115 457 52T310 -11Q242 -11 190 33L182 40V-45V-101Q182 -128 184 -134T195 -145Q216 -148 244 -148H260V-194H252L228 -193Q205 -192 178 -192T140 -191Q37 -191 28 -194H20V-148H36ZM424 218Q424 292 390 347T305 402Q234 402 182 337V98Q222 26 294 26Q345 26 384 80T424 218Z" />
+              <path id="MJX-11489-TEX-N-72" d="M36 46H50Q89 46 97 60V68Q97 77 97 91T98 122T98 161T98 203Q98 234 98 269T98 328L97 351Q94 370 83 376T38 385H20V408Q20 431 22 431L32 432Q42 433 60 434T96 436Q112 437 131 438T160 441T171 442H174V373Q213 441 271 441H277Q322 441 343 419T364 373Q364 352 351 337T313 322Q288 322 276 338T263 372Q263 381 265 388T270 400T273 405Q271 407 250 401Q234 393 226 386Q179 341 179 207V154Q179 141 179 127T179 101T180 81T180 66V61Q181 59 183 57T188 54T193 51T200 49T207 48T216 47T225 47T235 46T245 46H276V0H267Q249 3 140 3Q37 3 28 0H20V46H36Z" />
+            </defs>
+            <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)">
+              <g data-mml-node="math">
+                <g data-mml-node="mtable">
+                  <g data-mml-node="mtr" transform="translate(0,1300)">
+                    <g data-mml-node="mtd">
+                      <g data-mml-node="mtext">
+                        <use data-c="4D" xlink:href="#MJX-11489-TEX-N-4D">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11489-TEX-N-65" transform="translate(917,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11489-TEX-N-61" transform="translate(1361,0)">
+                        </use>
+                        <use data-c="6E" xlink:href="#MJX-11489-TEX-N-6E" transform="translate(1861,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,0)">
+                    <g data-mml-node="mtd" transform="translate(150.5,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="73" xlink:href="#MJX-11489-TEX-N-73">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11489-TEX-N-74" transform="translate(394,0)">
+                        </use>
+                        <use data-c="61" xlink:href="#MJX-11489-TEX-N-61" transform="translate(783,0)">
+                        </use>
+                        <use data-c="74" xlink:href="#MJX-11489-TEX-N-74" transform="translate(1283,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11489-TEX-N-65" transform="translate(1672,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                  <g data-mml-node="mtr" transform="translate(0,-1300)">
+                    <g data-mml-node="mtd" transform="translate(234.5,0)">
+                      <g data-mml-node="mtext">
+                        <use data-c="70" xlink:href="#MJX-11489-TEX-N-70">
+                        </use>
+                        <use data-c="72" xlink:href="#MJX-11489-TEX-N-72" transform="translate(556,0)">
+                        </use>
+                        <use data-c="65" xlink:href="#MJX-11489-TEX-N-65" transform="translate(948,0)">
+                        </use>
+                        <use data-c="70" xlink:href="#MJX-11489-TEX-N-70" transform="translate(1392,0)">
+                        </use>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </g>
+      </g>
+    </g>
+    <g data-op-id="gate2" class="Diagram-Operation gate gate gate-measurement svelte-1rytail" role="button" data-drop-target-for-element="true" style="cursor: pointer;">
+      <g class="Diagram-Glyph gate gate-measurement svelte-oqktos" transform="translate(596 90)">
+        <rect x="4.5" y="4" width="27" height="27" fill="white" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="square" class="svelte-oqktos" />
+        <circle cx="18" cy="21.549999999999997" r="1.08" fill="white" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="square">
+        </circle>
+        <path d="M 27.45 22.9 a 6.75 6.75 0 0 0 -18.9 0 M 18 21.549999999999997 l 8.91 -10.8" fill="none" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+      <g class="Diagram-Glyph gate-vdots svelte-oqktos" transform="translate(596 125)">
+        <circle cx="18" cy="11.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+        <circle cx="18" cy="17.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+        <circle cx="18" cy="23.5" r="1.25" fill="black" fill-opacity="1" stroke-width="0">
+        </circle>
+      </g>
+      <g class="Diagram-Glyph gate gate-measurement svelte-oqktos" transform="translate(596 160)">
+        <rect x="4.5" y="4" width="27" height="27" fill="white" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="square" class="svelte-oqktos" />
+        <circle cx="18" cy="21.549999999999997" r="1.08" fill="white" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="square">
+        </circle>
+        <path d="M 27.45 22.9 a 6.75 6.75 0 0 0 -18.9 0 M 18 21.549999999999997 l 8.91 -10.8" fill="none" fill-opacity="1" stroke="black" stroke-width="1.5" stroke-linecap="round" />
+      </g>
+    </g>
+    <g class="SVGText Diagram-copyright" transform="translate(20 205)" font-size="10">
+      <text x="0" y="30" width="612" height="10" text-anchor="start" dominant-baseline="middle" fill="inherit">Copyright © 2025 PsiQuantum Corp.  All rights reserved.</text>
+    </g>
+  </g>
+</svg>

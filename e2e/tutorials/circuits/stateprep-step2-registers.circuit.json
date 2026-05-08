@@ -1,0 +1,36 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Recursive state preparation SPₙ",
+  "copyright": "Copyright © 2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "LSQ",
+      "type": "register",
+      "label": "\\text{LSQ}"
+    },
+    {
+      "id": "MSQ",
+      "type": "register",
+      "label": "\\text{MSQ}",
+      "rail_names": "1,2,...,n-2,n-1",
+      "style": {
+        "expanded": true,
+        "enumerate": "custom"
+      }
+    },
+    {
+      "id": "gate",
+      "type": "gate",
+      "gate_type": "write",
+      "input_registers": "MSQ,LSQ"
+    },
+    {
+      "id": "routine",
+      "type": "routine",
+      "name": "SPn",
+      "label": "\\text{SP}_n",
+      "input_registers": "LSQ,MSQ",
+      "style": {}
+    }
+  ]
+}

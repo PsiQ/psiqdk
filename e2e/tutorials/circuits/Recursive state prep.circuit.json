@@ -1,0 +1,221 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Recursive state preparation",
+  "copyright": "Copyright © 2023-2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "lsb",
+      "type": "register",
+      "label": "\\text{LSB}",
+      "style": {
+        "rail_state": "allocated"
+      }
+    },
+    {
+      "id": "msb",
+      "type": "register",
+      "label": "\\text{MSB}",
+      "rail_names": "1,2,...,n-2,n-1",
+      "style": {
+        "show_rail_labels": true,
+        "expanded": true
+      }
+    },
+    {
+      "id": "routine",
+      "type": "routine",
+      "name": "SPn-1",
+      "label": "\\text{SP}_{n-1}",
+      "controlled_by": "~lsb",
+      "input_registers": "msb",
+      "control_type": "control.dot",
+      "tags": "",
+      "style": {
+        "expanded": true,
+        "box_el": {
+          "text_valign": "top",
+          "text_direction": "left",
+          "text_align": "middle",
+          "border": "1 solid #aaaaaa",
+          "text_color": "#aaaaaa"
+        }
+      },
+      "children": [
+        {
+          "id": "routine3",
+          "type": "routine",
+          "name": "SPn-2",
+          "label": "\\text{SP}_{n-2}",
+          "input_registers": "msb[1:]",
+          "controlled_by": "~lsb,~msb[0]",
+          "style": {
+            "expanded": true,
+            "box_el": {
+              "text_valign": "top",
+              "border": "1 solid #777777",
+              "text_color": "#777777"
+            }
+          },
+          "children": [
+            {
+              "id": "routine5",
+              "type": "routine",
+              "name": "SP2",
+              "label": "\\text{SP}_2",
+              "input_registers": "msb[3:]",
+              "controlled_by": "~lsb,~msb[0:2]",
+              "style": {
+                "expanded": true,
+                "box_el": {
+                  "text_valign": "top",
+                  "border": "1 solid #444444",
+                  "text_color": "#444444"
+                }
+              },
+              "children": [
+                {
+                  "id": "routine7",
+                  "type": "routine",
+                  "name": "SP1",
+                  "label": "\\text{SP}_1",
+                  "input_registers": "msb[4]",
+                  "controlled_by": "~lsb,~msb[:2],~msb[3]",
+                  "style": {
+                    "expanded": true,
+                    "box_el": {
+                      "border": "1 solid black"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "gate3",
+                      "type": "gate",
+                      "gate_type": "ry",
+                      "input_registers": "msb[4]",
+                      "controlled_by": "~lsb,~msb[:2],~msb[3]"
+                    }
+                  ]
+                },
+                {
+                  "id": "routine8",
+                  "type": "routine",
+                  "name": "SP1",
+                  "label": "\\text{SP}_1",
+                  "input_registers": "msb[4]",
+                  "controlled_by": "~lsb,~msb[:2],msb[3]",
+                  "style": {
+                    "expanded": true,
+                    "box_el": {
+                      "text_valign": "top"
+                    }
+                  },
+                  "children": [
+                    {
+                      "id": "gate7",
+                      "type": "gate",
+                      "gate_type": "ry",
+                      "input_registers": "msb[4]",
+                      "controlled_by": "~lsb,~msb[:2],msb[3]"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "routine6",
+              "type": "routine",
+              "name": "SP2",
+              "label": "\\text{SP}_2",
+              "input_registers": "msb[3:]",
+              "controlled_by": "~lsb,~msb[0:1],msb[1]",
+              "style": {
+                "expanded": true,
+                "box_el": {
+                  "text_valign": "top",
+                  "text_direction": "left",
+                  "border": "1 solid #444444",
+                  "text_color": "#444444"
+                }
+              },
+              "children": [
+                {
+                  "id": "routine9",
+                  "type": "routine",
+                  "name": "SP1",
+                  "label": "\\text{SP}_1",
+                  "input_registers": "msb[4]",
+                  "controlled_by": "~lsb,~msb[:1],msb[1],~msb[3]",
+                  "style": {
+                    "expanded": false
+                  },
+                  "children": [
+                    {
+                      "id": "gate8",
+                      "type": "gate",
+                      "gate_type": "ry",
+                      "input_registers": "msb[4]",
+                      "controlled_by": "~lsb,~msb[:1],msb[1],~msb[3]"
+                    }
+                  ]
+                },
+                {
+                  "id": "routine10",
+                  "type": "routine",
+                  "name": "SP1",
+                  "label": "\\text{SP}_1",
+                  "input_registers": "msb[4]",
+                  "controlled_by": "~lsb,~msb[:1],msb[1],msb[3]",
+                  "style": {
+                    "expanded": false
+                  },
+                  "children": [
+                    {
+                      "id": "gate9",
+                      "type": "gate",
+                      "gate_type": "ry",
+                      "input_registers": "msb[4]",
+                      "controlled_by": "~lsb,~msb[:1],msb[1],msb[3]"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "routine4",
+          "type": "routine",
+          "name": "SPn-2",
+          "label": "\\text{SP}_{n-2}",
+          "input_registers": "msb[1:]",
+          "controlled_by": "msb[0],~lsb",
+          "tags": "vertical ",
+          "style": {
+            "expanded": true,
+            "box_el": {
+              "text_direction": "left",
+              "text_valign": "top"
+            }
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "routine2",
+      "type": "routine",
+      "name": "SPn-1",
+      "label": "\\text{SP}_{n-1}",
+      "controlled_by": "lsb",
+      "input_registers": "msb",
+      "control_type": "control.dot",
+      "style": {
+        "expanded": true,
+        "box_el": {
+          "text_valign": "top"
+        }
+      },
+      "children": []
+    }
+  ]
+}

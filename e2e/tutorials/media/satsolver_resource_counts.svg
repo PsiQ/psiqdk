@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" id="Graph-all_countscall_graph" class="CallGraph mx-auto svelte-1ntj4n animate" width="1126.5" height="471" font-family="Arial, sans-serif" font-size="16" fill="black" clip-path="url(#svg-JUpttE3Qlw)" data-size="1502x628">
+  <clipPath id="svg-JUpttE3Qlw">
+    <rect x="0" y="0" width="1126.5" height="471" />
+  </clipPath>
+  <defs>
+    <marker viewBox="0 0 10 10" refX="5" refY="5" orient="auto" stroke="none" id="TreeConnector-arrow-end" markerWidth="8" markerHeight="8" fill="#888">
+      <path d="M 0 0 L 10 5 L 0 10 z" />
+    </marker>
+    <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true" fill="currentcolor" shape-rendering="geometricPrecision" id="Pencil" class="FAIcon " viewBox="0 0 640 640" style="width: 1.25rem; height: 1.25rem;">
+      <g transform="translate(64 64)">
+        <path d="M0 512l6.8-34L32 352 361.4 22.6 384 0l22.6 22.6 82.7 82.7L512 128l-22.6 22.6L160 480 34 505.2 0 512zM176 400l0 18.7L398.1 196.7l-82.7-82.7L93.3 336l18.7 0 16 0 0 16 0 32 32 0 16 0 0 16zm-32 48l0-32-32 0-16 0 0-16 0-32-32 0c-.9 0-1.7-.1-2.5-.2L40.8 471.2l103.4-20.7c-.1-.8-.2-1.7-.2-2.5zM420.7 174.1L466.7 128 384 45.3 337.9 91.3l82.7 82.7zm-89.4 28.7l-128 128L192 342.1l-22.6-22.6 11.3-11.3 128-128L320 168.8l22.6 22.6-11.3 11.3z" />
+      </g>
+    </svg>
+  </defs>
+  <g class="SVGScaler svelte-1ntj4n" transform="scale(0.75)">
+    <rect class="SVGSizer svelte-1ntj4n" top="0" left="0" width="1502" height="628" fill="white" fill-opacity="0" />
+    <rect class="SVGBackdrop rect  SVGElementBackdrop" x="0" y="0" width="1502" height="628" fill="white" stroke-width="0" rx="0" />
+    <g style="transition: font-size 0s !important" class="SVGText CallGraph-title shrink_to_fit" transform="translate(4 0)" font-size="30" font-weight="bold" clip-path="url(#clip-RXCTUYyQSD)">
+      <clipPath id="clip-RXCTUYyQSD">
+        <rect x="0" y="20" width="1490" height="40" />
+      </clipPath>
+      <text x="745" y="20" width="1490" height="40" text-anchor="middle" dominant-baseline="hanging" fill="inherit" stroke-width="0" style="transition: none !important;">All Resource Counts</text>
+    </g>
+    <g style="transition: font-size 0s !important" class="SVGText CallGraph-copyright" transform="translate(4 585)" font-size="10">
+      <text x="0" y="32.5" width="1490" height="15" text-anchor="start" dominant-baseline="middle" fill="inherit" stroke-width="0" style="transition: none !important;">Copyright © 2026. All rights reserved.</text>
+    </g>
+    <g class="CallGraph-nodes svelte-1sj4zrq" transform="translate(4 60)">
+      <g class="TreeNode group svelte-3bz7zy" id="n-root" transform="translate(596 0)">
+        <title class="svelte-3bz7zy">root (type root)</title>
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 65%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-chzveYFXwW)">
+            <clipPath id="clip-chzveYFXwW">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">root</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">88</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">88</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0">
+        <path class="TreeConnector-line" d="M 745,155 L 745,160 C 745,192.5,745,192.5,745,192.5 S 745,192.5,745,195 L 745,195 L 745,200" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(596 177)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy selected" id="n-rootgroverssearchsatproblem_compute_0" transform="translate(596 175)">
+        <title class="svelte-3bz7zy">GroversSearchSATProblem (type qubrick)</title>
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 65%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-rzLWe-4HSf)">
+            <clipPath id="clip-rzLWe-4HSf">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">GroversSearchSATProblem</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">88</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">88</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0.MeanStatePrep_compute_0">
+        <path class="TreeConnector-line" d="M 745,330 L 745,335 C 745,347.5,536.4,347.5,536.4,347.5 S 149,347.5,149,370 L 149,370 L 149,375" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(0 352)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0.PhasekickbackPrep_compute_0">
+        <path class="TreeConnector-line" d="M 745,330 L 745,335 C 745,357.5,581.1,357.5,581.1,357.5 S 447,357.5,447,370 L 447,370 L 447,375" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(298 352)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0.EvaluateFormula_compute_0">
+        <path class="TreeConnector-line" d="M 745,330 L 745,335 C 745,367.5,745,367.5,745,367.5 S 745,367.5,745,370 L 745,370 L 745,375" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(596 352)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0.ReflectionAboutTheMean_compute_0">
+        <path class="TreeConnector-line" d="M 745,330 L 745,335 C 745,357.5,908.9,357.5,908.9,357.5 S 1043,357.5,1043,370 L 1043,370 L 1043,375" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(894 352)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeConnector" id="root.GroversSearchSATProblem_compute_0.read_0">
+        <path class="TreeConnector-line" d="M 745,330 L 745,335 C 745,347.5,953.6,347.5,953.6,347.5 S 1341,347.5,1341,370 L 1341,370 L 1341,375" fill="none" stroke="#999" stroke-width="1" marker-end="url(#TreeConnector-arrow-end)" />
+        <g style="transition: font-size 0s !important" class="SVGText TreeConnector-label" transform="translate(1192 352)" font-size="12">
+          <text x="149" y="0" width="298" height="20" text-anchor="middle" dominant-baseline="hanging" fill="#666" stroke-width="0" style="transition: none !important;">1</text>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy" id="n-rootgroverssearchsatproblem_compute_0meanstateprep_compute_0" transform="translate(0 350)">
+        <title class="svelte-3bz7zy">MeanStatePrep (type qubrick)</title>
+        <rect class="SVGBackdrop round_rect  TreeNode-stub" x="8.5" y="30.5" width="281" height="129" fill="hsl(0, 100%, 85.99355285932617%)" stroke="#666" stroke-width="1" rx="8" opacity="0.5" />
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 85.99355285932617%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-LH5GAHb4Tb)">
+            <clipPath id="clip-LH5GAHb4Tb">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">MeanStatePrep</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">6</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">6</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">6.82%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy" id="n-rootgroverssearchsatproblem_compute_0phasekickbackprep_compute_0" transform="translate(298 350)">
+        <title class="svelte-3bz7zy">PhasekickbackPrep (type qubrick)</title>
+        <rect class="SVGBackdrop round_rect  TreeNode-stub" x="8.5" y="30.5" width="281" height="129" fill="hsl(0, 100%, 91.41198625507806%)" stroke="#666" stroke-width="1" rx="8" opacity="0.5" />
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 91.41198625507806%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-I6AhMTn9St)">
+            <clipPath id="clip-I6AhMTn9St">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">PhasekickbackPrep</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">3</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">3</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">3.41%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy" id="n-rootgroverssearchsatproblem_compute_0evaluateformula_compute_0" transform="translate(596 350)">
+        <title class="svelte-3bz7zy">EvaluateFormula (type qubrick)</title>
+        <rect class="SVGBackdrop round_rect  TreeNode-stub" x="8.5" y="30.5" width="281" height="129" fill="hsl(0, 100%, 67.61250684675078%)" stroke="#666" stroke-width="1" rx="8" opacity="0.5" />
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 67.61250684675078%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-SyGAgxDCwX)">
+            <clipPath id="clip-SyGAgxDCwX">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">EvaluateFormula</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">63</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">63</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">71.59%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">1</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy" id="n-rootgroverssearchsatproblem_compute_0reflectionaboutthemean_compute_0" transform="translate(894 350)">
+        <title class="svelte-3bz7zy">ReflectionAboutTheMean (type qubrick)</title>
+        <rect class="SVGBackdrop round_rect  TreeNode-stub" x="8.5" y="30.5" width="281" height="129" fill="hsl(0, 100%, 78.32626641699245%)" stroke="#666" stroke-width="1" rx="8" opacity="0.5" />
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 78.32626641699245%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-PCq_W1RNc-)">
+            <clipPath id="clip-PCq_W1RNc-">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">ReflectionAboutTheMean</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">16</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">16</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">18.18%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+        </g>
+      </g>
+      <g class="TreeNode group svelte-3bz7zy" id="n-rootgroverssearchsatproblem_compute_0read_0" transform="translate(1192 350)">
+        <title class="svelte-3bz7zy">read (type read)</title>
+        <g class="SVGTable ">
+          <rect class="SVGBackdrop round_rect  " x="5.5" y="30.5" width="287" height="124" fill="hsl(0, 100%, 100%)" stroke="#666" stroke-width="1" rx="8" />
+          <g style="transition: font-size 0s !important" id="row0-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 31)" font-size="18" font-weight="bold" clip-path="url(#clip-LWGygtLmxn)">
+            <clipPath id="clip-LWGygtLmxn">
+              <rect x="5" y="2" width="260" height="30" />
+            </clipPath>
+            <text x="135" y="17" width="260" height="30" text-anchor="middle" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">read</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 63)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">
+            </text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col1" class="SVGText undefined shrink_to_fit" transform="translate(104 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Per Call</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col2" class="SVGText undefined shrink_to_fit" transform="translate(164 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Total</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row1-col3" class="SVGText undefined shrink_to_fit" transform="translate(224 63)" font-size="12" opacity="0.6">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Overall</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 85)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Active Volume</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col1" class="SVGText undefined" transform="translate(104 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col2" class="SVGText undefined" transform="translate(164 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row2-col3" class="SVGText undefined" transform="translate(224 85)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 107)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Measurements</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col1" class="SVGText undefined" transform="translate(104 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col2" class="SVGText undefined" transform="translate(164 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">2</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row3-col3" class="SVGText undefined" transform="translate(224 107)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">100%</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col0" class="SVGText undefined shrink_to_fit" transform="translate(14 129)" font-size="12" opacity="0.6">
+            <text x="4" y="11" width="82" height="14" text-anchor="start" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">Toffs</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col1" class="SVGText undefined" transform="translate(104 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col2" class="SVGText undefined" transform="translate(164 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0</text>
+          </g>
+          <g style="transition: font-size 0s !important" id="row4-col3" class="SVGText undefined" transform="translate(224 129)" font-size="12">
+            <text x="56" y="11" width="52" height="14" text-anchor="end" dominant-baseline="middle" fill="#333" stroke-width="0" style="transition: none !important;">0%</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

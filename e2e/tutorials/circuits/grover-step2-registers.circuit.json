@@ -1,0 +1,27 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Grover's search algorithm",
+  "copyright": "Copyright © 2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "x",
+      "type": "register",
+      "label": "x",
+      "rail_names": "0,...,n-1",
+      "style": {
+        "collapsed_marker_el": {
+          "visible": false,
+          "text": "n"
+        },
+        "enumerate": "custom",
+        "expanded": true
+      }
+    },
+    {
+      "id": "gate",
+      "type": "gate",
+      "gate_type": "write",
+      "input_registers": "x"
+    }
+  ]
+}

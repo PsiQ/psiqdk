@@ -1,0 +1,173 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Marking oracle for f(x) = (x₀ ∨ x₁) ∧ (x₀ ∨ ¬x₂)",
+  "copyright": "Copyright © 2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "x",
+      "type": "register",
+      "label": "x",
+      "rail_names": "x_0,x_1,x_2"
+    },
+    {
+      "id": "a",
+      "type": "register",
+      "label": "a",
+      "rail_names": "a_0,a_1"
+    },
+    {
+      "id": "y",
+      "type": "register",
+      "label": "y"
+    },
+    {
+      "id": "gate",
+      "type": "gate",
+      "gate_type": "write",
+      "input_registers": "a"
+    },
+    {
+      "id": "routine",
+      "type": "routine",
+      "name": "compute",
+      "label": "\\text{Compute clauses}",
+      "input_registers": "x,a",
+      "style": {
+        "expanded": true
+      },
+      "children": [
+        {
+          "id": "routine4",
+          "type": "routine",
+          "name": "clause0",
+          "label": "x_0 \\lor x_1",
+          "input_registers": "x[0],x[1],a[0]",
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "gate3",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[0]",
+              "controlled_by": "~x[0],~x[1]"
+            },
+            {
+              "id": "gate4",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[0]"
+            }
+          ]
+        },
+        {
+          "id": "routine5",
+          "type": "routine",
+          "name": "clause1",
+          "label": "x_0 \\lor \\neg x_2",
+          "input_registers": "x[0],x[2],a[1]",
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "gate5",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[1]",
+              "controlled_by": "~x[0],x[2]"
+            },
+            {
+              "id": "gate6",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[1]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "routine3",
+      "type": "routine",
+      "name": "result",
+      "label": "\\text{Compute result}",
+      "input_registers": "a,y",
+      "style": {
+        "expanded": true
+      },
+      "children": [
+        {
+          "id": "gate2",
+          "type": "gate",
+          "gate_type": "x",
+          "input_registers": "y",
+          "controlled_by": "a"
+        }
+      ]
+    },
+    {
+      "id": "routine2",
+      "type": "routine",
+      "name": "uncompute",
+      "label": "\\text{Uncompute clauses}",
+      "input_registers": "x,a",
+      "style": {
+        "expanded": true
+      },
+      "children": [
+        {
+          "id": "routine6",
+          "type": "routine",
+          "name": "clause1",
+          "label": "x_0 \\lor \\neg x_2",
+          "input_registers": "x[0],x[2],a[1]",
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "gate9",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[1]"
+            },
+            {
+              "id": "gate10",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[1]",
+              "controlled_by": "~x[0],x[2]"
+            }
+          ]
+        },
+        {
+          "id": "routine7",
+          "type": "routine",
+          "name": "clause0",
+          "label": "x_0 \\lor x_1",
+          "input_registers": "x[0],x[1],a[0]",
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "gate7",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[0]"
+            },
+            {
+              "id": "gate8",
+              "type": "gate",
+              "gate_type": "x",
+              "input_registers": "a[0]",
+              "controlled_by": "~x[0],~x[1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Recursive state preparation SPₙ",
+  "copyright": "Copyright © 2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "LSQ",
+      "type": "register",
+      "label": "\\text{LSQ}",
+      "style": {
+        "rail_state": "allocated"
+      }
+    },
+    {
+      "id": "MSQ",
+      "type": "register",
+      "label": "\\text{MSQ}",
+      "rail_names": "1,2,...,n-2,n-1",
+      "style": {
+        "expanded": true,
+        "rail_state": "allocated"
+      }
+    },
+    {
+      "id": "gate",
+      "type": "gate",
+      "gate_type": "write",
+      "input_registers": "MSQ,LSQ"
+    },
+    {
+      "id": "routine10",
+      "type": "routine",
+      "name": "SPn",
+      "label": "\\text{SP}_n",
+      "input_registers": "LSQ,MSQ",
+      "tags": [
+        "expand-text-above"
+      ],
+      "style": {
+        "expanded": true
+      },
+      "children": [
+        {
+          "id": "routine",
+          "type": "routine",
+          "name": "SP1",
+          "label": "\\text{SP}_1",
+          "input_registers": "LSQ",
+          "style": {}
+        },
+        {
+          "id": "routine2",
+          "type": "routine",
+          "name": "SPn-1",
+          "label": "\\text{SP}_{n-1}",
+          "input_registers": "MSQ",
+          "controlled_by": "~LSQ",
+          "tags": [
+            "expand-text-above"
+          ],
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "routine4",
+              "type": "routine",
+              "name": "SP1",
+              "label": "\\text{SP}_1",
+              "input_registers": "MSQ[0]",
+              "controlled_by": "~LSQ",
+              "style": {}
+            },
+            {
+              "id": "routine5",
+              "type": "routine",
+              "name": "SPn-2",
+              "label": "\\text{SP}_{n-2}",
+              "input_registers": "MSQ[1:]",
+              "controlled_by": "~LSQ,~MSQ[0]",
+              "tags": [
+                "expand-text-above"
+              ],
+              "style": {
+                "expanded": true
+              },
+              "children": [
+                {
+                  "id": "routine7",
+                  "type": "routine",
+                  "name": "SP1",
+                  "label": "\\text{SP}_1",
+                  "input_registers": "MSQ[1]",
+                  "controlled_by": "~LSQ,~MSQ[0]",
+                  "style": {}
+                },
+                {
+                  "id": "routine8",
+                  "type": "routine",
+                  "name": "SP2",
+                  "label": "\\text{SP}_2",
+                  "input_registers": "MSQ[3:]",
+                  "controlled_by": "~LSQ,~MSQ[0:2]",
+                  "tags": [
+                    "expand-text-above"
+                  ],
+                  "style": {
+                    "expanded": true
+                  },
+                  "children": [
+                    {
+                      "id": "routine11",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[3]",
+                      "controlled_by": "~LSQ,~MSQ[0:2]",
+                      "style": {}
+                    },
+                    {
+                      "id": "routine12",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[4]",
+                      "controlled_by": "~LSQ,~MSQ[0:2],~MSQ[3]",
+                      "style": {}
+                    },
+                    {
+                      "id": "routine13",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[4]",
+                      "controlled_by": "~LSQ,~MSQ[0:2],MSQ[3]",
+                      "style": {}
+                    }
+                  ]
+                },
+                {
+                  "id": "ellipsis",
+                  "type": "separator",
+                  "input_registers": "MSQ[2]",
+                  "tags": [
+                    "ellipsis"
+                  ],
+                  "style": {
+                    "glyph": {
+                      "type": "dots"
+                    }
+                  }
+                },
+                {
+                  "id": "routine9",
+                  "type": "routine",
+                  "name": "SP2",
+                  "label": "\\text{SP}_2",
+                  "input_registers": "MSQ[3:]",
+                  "controlled_by": "~LSQ,~MSQ[0],MSQ[1]",
+                  "tags": [
+                    "expand-text-above"
+                  ],
+                  "style": {
+                    "expanded": true
+                  },
+                  "children": [
+                    {
+                      "id": "routine14",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[3]",
+                      "controlled_by": "~LSQ,~MSQ[0],MSQ[1]",
+                      "style": {}
+                    },
+                    {
+                      "id": "routine15",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[4]",
+                      "controlled_by": "~LSQ,~MSQ[0],MSQ[1],~MSQ[3]",
+                      "style": {}
+                    },
+                    {
+                      "id": "routine16",
+                      "type": "routine",
+                      "name": "SP1",
+                      "label": "\\text{SP}_1",
+                      "input_registers": "MSQ[4]",
+                      "controlled_by": "~LSQ,~MSQ[0],MSQ[1],MSQ[3]",
+                      "style": {}
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "routine6",
+              "type": "routine",
+              "name": "SPn-2",
+              "label": "\\text{SP}_{n-2}",
+              "input_registers": "MSQ[1:]",
+              "controlled_by": "~LSQ,MSQ[0]",
+              "style": {}
+            }
+          ]
+        },
+        {
+          "id": "routine3",
+          "type": "routine",
+          "name": "SPn-1",
+          "label": "\\text{SP}_{n-1}",
+          "input_registers": "MSQ",
+          "controlled_by": "LSQ",
+          "style": {}
+        }
+      ]
+    }
+  ]
+}

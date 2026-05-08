@@ -1,0 +1,132 @@
+{
+  "record_type": "psiquantum.circuit",
+  "title": "Grover's search algorithm",
+  "copyright": "Copyright © 2025 PsiQuantum Corp.  All rights reserved.",
+  "operations": [
+    {
+      "id": "x",
+      "type": "register",
+      "label": "x",
+      "rail_names": "0,...,n-1",
+      "style": {
+        "collapsed_marker_el": {
+          "visible": false,
+          "text": "n"
+        },
+        "enumerate": "custom",
+        "expanded": true
+      }
+    },
+    {
+      "id": "gate",
+      "type": "gate",
+      "gate_type": "write",
+      "input_registers": "x"
+    },
+    {
+      "id": "routine",
+      "type": "routine",
+      "name": "routine",
+      "input_registers": "x",
+      "label": "\\begin{gather}\n\\text{Mean} \\\\\n\\text{state} \\\\ \n\\text{prep}\n\\end{gather}",
+      "style": {}
+    },
+    {
+      "id": "group",
+      "type": "group",
+      "input_registers": "*",
+      "label": "\\text{Grover iteration - repeat K times}",
+      "style": {
+        "box_el": {
+          "stroke": {
+            "border_style": "dashed"
+          },
+          "text_align": "middle",
+          "padding": "h: 6"
+        },
+        "margin": "0",
+        "expanded": true
+      },
+      "children": [
+        {
+          "id": "routine2",
+          "type": "routine",
+          "name": "routine",
+          "label": "\\begin{gather}\n\\text{Phase} \\\\\n\\text{oracle}\n\\end{gather}",
+          "input_registers": "x",
+          "style": {}
+        },
+        {
+          "id": "routine3",
+          "type": "routine",
+          "name": "routine",
+          "label": "\\text{Reflection about the mean}",
+          "input_registers": "x",
+          "tags": [
+            "expand-text-above"
+          ],
+          "style": {
+            "expanded": true
+          },
+          "children": [
+            {
+              "id": "routine4",
+              "type": "routine",
+              "name": "routine",
+              "label": "\\begin{gather}\n\\text{Mean}^\\dagger \\\\\n\\text{state} \\\\ \n\\text{prep}\n\\end{gather}",
+              "input_registers": "x",
+              "style": {}
+            },
+            {
+              "id": "routine5",
+              "type": "routine",
+              "name": "routine",
+              "label": "\\text{Reflection about } \\ket{0}",
+              "input_registers": "x",
+              "tags": [
+                "expand-text-above"
+              ],
+              "style": {
+                "expanded": true
+              },
+              "children": [
+                {
+                  "id": "gate3",
+                  "type": "gate",
+                  "gate_type": "x",
+                  "input_registers": "x"
+                },
+                {
+                  "id": "gate4",
+                  "type": "gate",
+                  "gate_type": "z",
+                  "controlled_by": "x"
+                },
+                {
+                  "id": "gate5",
+                  "type": "gate",
+                  "gate_type": "x",
+                  "input_registers": "x"
+                }
+              ]
+            },
+            {
+              "id": "routine6",
+              "type": "routine",
+              "name": "routine",
+              "label": "\\begin{gather}\n\\text{Mean} \\\\\n\\text{state} \\\\ \n\\text{prep}\n\\end{gather}",
+              "input_registers": "x",
+              "style": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gate2",
+      "type": "gate",
+      "gate_type": "measurement",
+      "input_registers": "x"
+    }
+  ]
+}
