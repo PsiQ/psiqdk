@@ -308,6 +308,8 @@
 
 ### Other Changes
 
+- **qref**: none → 0.11.0
+  - Added new component: qref 0.11.0
 ## [1.1.0] - 2026-02-05
 
 ### Features
@@ -331,6 +333,8 @@
   - First pass at a fix for #1249
   - fix issue with wrong defaults in default_functions_map
   - add missing known_discrepancies for GidneyAdd and RotationCatalystHandler.
+- **bartiq**: 0.16.0 → 0.16.1
+  - correctly handle custom functions in repetition count (#280)
 - **basquiat-adapter**: 0.5.0 → 0.5.1
   - test patch release of basquiat-adapter - ignore
 ### Documentation
@@ -667,6 +671,8 @@
   - add support for zero target T, S, t_inv, and s_inv stale count
   - Mark RotationCatalystStatePrep as first-pass only routine for Bartiq
   - add random.seed() in set_param()
+- **bartiq**: 0.15.3 → 0.16.0
+  - add support for first-pass resources (#277)
 - **basquiat-adapter**: 0.4.3 → 0.5.0
   - Alias basquiat serialization dialect to qre-analysis
 ### Bug Fixes
@@ -791,9 +797,15 @@
 - **workbench-algorithms**: 1.9.1 → 1.9.3
   - paulisum to sparse
   - doc: fix documentation
+- **bartiq**: none → 0.15.3
+  - Added new component: bartiq 0.15.3
 - **basquiat-adapter**: none → 0.4.3
   - Added new component: basquiat-adapter 0.4.3
 - **construct-tools**: none → 0.9.4
   - Added new component: construct-tools 0.9.4
 - **spoony**: none → 0.1.0
   - Added new component: spoony 0.1.0
+- **openfermion**: none → 1.7.1
+  - Added new component: openfermion 1.7.1
+- **pubchempy**: none → 1.0.5
+  - Added new component: pubchempy 1.0.5
