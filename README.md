@@ -1,15 +1,15 @@
 # PsiQuantum Development Kit (PsiQDK)
 
-Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at PsiQuantum's fault-tolerant photonic quantum computer.
+Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at fault-tolerant quantum computers.
 
-PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate its cost on fault-tolerant hardware, and visualize the results - all under a single, version-aligned distribution.
+PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate its cost on fault-tolerant hardware, and visualize the results.
 
 ## What's in PsiQDK?
 
 | Component | Purpose |
 | --- | --- |
-| **[Workbench](./workbench)** | A Python framework with an optimized C++ backend for writing and simulating quantum programs, plus symbolic resource estimation. |
-| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, QROM, and more. |
+| **[Workbench](./workbench)** | A Python framework with an optimized C++ backend for writing and simulating quantum programs and perform resource estimation. |
+| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, data loading, and more. |
 | **[Visualize](./visualize)** | Jupyter widgets and editor integrations for inspecting circuits and resource-estimation reports. |
 | **[End-to-end examples](./e2e)** | Full workflows that combine circuit design, implementation, simulation, and resource estimation on real algorithms. |
 
@@ -39,7 +39,7 @@ psiqdk --verify
 ## Documentation and examples
 
 - **Official documentation**: <https://open-docs.construct.psiquantum.com/>
-- **Tutorials in this repository** - Jupyter notebooks that mirror the documentation and can be run end-to-end:
+- **Tutorials in this repository** - Jupyter notebooks that mirror the documentation:
   - [Workbench tutorials](./workbench/tutorials) - gates, qubit management, simulation, resource estimation, and the Qubricks framework.
   - [Algorithms tutorials](./algorithms/tutorials) - state preparation, amplitude amplification, phase estimation, arithmetic, QROM, and more.
   - [Visualization examples](./visualize) - interactive circuit and QRE viewers for Jupyter and VS Code.
@@ -48,7 +48,7 @@ psiqdk --verify
 ## Other learning resources
 
 - **[Workbench Quantum Katas](https://github.com/PsiQ/workbench-quantum-katas)** - a hands-on collection of tutorials and programming exercises that teach quantum computing and quantum programming, from basic concepts to fault-tolerant applications such as quantum chemistry.
-- **[Quantum Programming in Depth](https://github.com/tcNickolas/quantum-programming-in-depth)** - side-by-side code samples in three quantum development toolkits: Workbench, Q#, and Qiskit.
+- **[Quantum Programming in Depth](https://github.com/tcNickolas/quantum-programming-in-depth)** - side-by-side code samples in three quantum development toolkits: Workbench, Q#, and Qiskit from the book [Quantum Programming in Depth](https://www.oreilly.com/library/view/quantum-programming-in/9781633436909/) written by Mariia Mykhailova.
 
 ## Support policy
 
