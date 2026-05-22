@@ -1,13 +1,13 @@
 # Quantum State Prep - Part 1
 **Algorithm Design**
 
-In this tutorial, we will learn to create a quantum program using QDE tools.
+In this tutorial, we will learn to create a quantum program using PsiQDE tools.
 
 This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm:
 
-* In part 1, we will define the algorithm we'll be working on and draw a circuit diagram for it using Circuit Designer.
+* In part 1, we will define the algorithm we'll be working on and draw a circuit diagram for it using [Circuit Designer](https://circuits.psiquantum.com/).
 * In part 2, we will implement the algorithm and test it using Workbench.
-* Finally, in part 3, we will analyze the performance of our program using QRE Analyzer.
+* Finally, in part 3, we will analyze the performance of our program using Resource Analyzer.
 
 ## Quantum state preparation algorithm
 
@@ -32,6 +32,7 @@ Finally, if we know how to prepare an arbitrary state on $n-1$ qubits, we can us
 
 Let's start by expressing this algorithm as a quantum circuit diagram.
 
+> You can find the complete circuit diagram for recursive state preparation built in this tutorial [on Circuit Hub](https://github.com/PsiQ/circuit-hub/blob/main/psiq-tutorial-circuits/recursive-state-preparation.circuit.json).
 
 ## Drawing the circuit diagram
 
@@ -71,7 +72,7 @@ Repeat the process for the second controlled routine, this time using `LSQ` in t
 
 > When a new routine is added to the circuit, it will be created as the rightmost element inside the currently selected routine. When you create the routines inside $\text{SP}_n$, make sure you have $\text{SP}_n$ selected.
 
-By default, when you expand a routine which has other elements inside it, its label will move to the left side of that routine and rotate $90\degree$ counterclockwise. In our case, the diagram will have multiple layers of nested routines. To keep it from growing too wide, we can move the label of each expanded routine to the top by choosing `Above` in the *When Expanded* dropdown.
+By default, when you expand a routine which has other elements inside it, its label will move to the left side of that routine and rotate $90^\circ$ counterclockwise. In our case, the diagram will have multiple layers of nested routines. To keep it from growing too wide, we can move the label of each expanded routine to the top by choosing `Above` in the *When Expanded* dropdown.
 
 With these three routines added, the diagram will look like this:
 
@@ -152,4 +153,4 @@ The result will look similar to this diagram:
 
 In this tutorial, we explored the structure of the recursive state preparation algorithm and designed its circuit diagram using Circuit Designer.
 
-In the [next part of this tutorial](stateprep_code.ipynb), we will implement this algorithm in Workbench and test that our implementation is correct!
+In the [next part of this tutorial](./stateprep_2_code.ipynb), we will implement this algorithm in Workbench and test that our implementation is correct!

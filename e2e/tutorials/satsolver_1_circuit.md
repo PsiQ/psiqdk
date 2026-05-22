@@ -5,9 +5,9 @@ In this tutorial, we will continue learning to develop quantum programs using QD
 
 This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm:
 
-* In part 1, we will define generic Grover's search algorithm and the oracle for SAT problems and draw circuit diagrams for both using Circuit Designer.
+* In part 1, we will define generic Grover's search algorithm and the oracle for SAT problems and draw circuit diagrams for both using [Circuit Designer](https://circuits.psiquantum.com/).
 * In part 2, we will implement the algorithm and test it using Workbench.
-* Finally, in part 3, we will analyze the performance of our program using QRE Analyzer.
+* Finally, in part 3, we will analyze the performance of our program using Resource Analyzer.
 
 ## Grover's search algorithm
 
@@ -36,6 +36,8 @@ Given these two subroutines, Grover's algorithm implementation for a specific pr
 3. Measure the qubits to get the result of the algorithm execution.
 
 Let's start by drawing this algorithm as a generic quantum circuit diagram. Then, we'll talk about implementing it for our example of SAT problems.
+
+> You can find the complete circuit diagram for Grover's search algorithm built in the first part of this tutorial [on Circuit Hub](https://github.com/PsiQ/circuit-hub/blob/main/psiq-tutorial-circuits/grover-search.circuit.json).
 
 
 ## Drawing the circuit diagram: Grover's search
@@ -151,6 +153,7 @@ How can we implement the marking oracle for a general SAT formula, given that fo
 
 Let's see what this sequence of steps will look like as a circuit diagram for our example formula.
 
+> You can find the complete circuit diagram for this oracle built in the second part of this tutorial [on Circuit Hub](https://github.com/PsiQ/circuit-hub/blob/main/psiq-tutorial-circuits/sat-problem-marking-oracle.circuit.json).
 
 ## Drawing the circuit diagram: SAT problems oracle
 
@@ -217,4 +220,4 @@ In this tutorial,
 * We discussed applying Grover's algorithm to solving SAT problems and the necessary building blocks for it.
 * Finally, we defined the implementation of the quantum oracle - the most complicated part of implementing Grover's algorithm for a specific problem - and designed the circuit diagram for the marking oracle for a small example of a SAT problem.
 
-In the [next part of this tutorial](satsolver_code.ipynb), we will implement this algorithm in Workbench and test that our implementation is correct!
+In the [next part of this tutorial](./satsolver_2_code.ipynb), we will implement this algorithm in Workbench and test that our implementation is correct!
