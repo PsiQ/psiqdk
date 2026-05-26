@@ -4,7 +4,7 @@ Interactive viewers for **quantum circuits** and **quantum resource estimation (
 
 ## Documentation
 
-[Full PsiQDK documentation](https://open-docs.construct.psiquantum.com/).
+[Full PsiQDK documentation](https://construct.psiquantum.com/docs).
 
 ## What's included
 
