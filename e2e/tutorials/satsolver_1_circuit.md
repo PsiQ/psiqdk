@@ -1,7 +1,7 @@
 #  Grover's search - Part 1
 **Algorithm Design**
 
-In this tutorial, we will continue learning to develop quantum programs using QDE tools. This time, we'll implement a more complex algorithm: Grover's search algorithm for solving Boolean satisfiability (SAT) problems.
+In this tutorial, we will continue learning to develop quantum programs using Construct. This time, we'll implement a more complex algorithm: Grover's search algorithm for solving Boolean satisfiability (SAT) problems.
 
 This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm:
 

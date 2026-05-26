@@ -1,7 +1,7 @@
 # Quantum State Prep - Part 1
 **Algorithm Design**
 
-In this tutorial, we will learn to create a quantum program using PsiQDE tools.
+In this tutorial, we will learn to create a quantum program using Construct.
 
 This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm:
 
