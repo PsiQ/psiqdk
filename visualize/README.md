@@ -4,7 +4,7 @@ Interactive viewers for **quantum circuits** and **quantum resource estimation (
 
 ## Documentation
 
-Full documentation: <https://open-docs.construct.psiquantum.com/>
+[Full PsiQDK documentation](https://open-docs.construct.psiquantum.com/).
 
 ## What's included
 
@@ -40,6 +40,6 @@ Circuit(src="myprogram.circuit")
 
 The widgets accept either a local file path or an `https://` URL pointing to a circuit or QRE artifact.
 
-## Feedback
+## Getting help
 
-Report issues at <https://github.com/PsiQ/psiqdk/issues/new/>.
+Please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question.
