@@ -10,7 +10,7 @@ Each example is split into several parts, following the same workflow one would 
 
 ## Documentation
 
-[End-to-end tutorials](https://construct.psiquantum.com/docs/construct/tutorials/stateprep_circuit.html).
+[End-to-end tutorials](https://construct.psiquantum.com/docs/construct/tutorials/stateprep_1_circuit.html).
 
 ## Prerequisites
 
