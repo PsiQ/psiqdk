@@ -1,0 +1,85 @@
+cff-version: 1.2.0
+title: PsiQDK
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Athena
+    family-names: Caesura
+    affiliation: PsiQuantum
+  - given-names: Even
+    family-names: Glemmestad
+    affiliation: PsiQuantum
+  - given-names: Lesley
+    family-names: Gover
+    affiliation: PsiQuantum
+  - given-names: Sean
+    family-names: Greenaway
+    affiliation: PsiQuantum
+  - given-names: Kevin
+    family-names: Gui
+    affiliation: PsiQuantum
+  - given-names: Carys
+    family-names: Harvey
+    affiliation: PsiQuantum
+  - given-names: Sam
+    family-names: Heavey
+    affiliation: PsiQuantum
+  - given-names: Konrad
+    family-names: Jałowiecki
+    affiliation: PsiQuantum
+  - given-names: Eric
+    family-names: Johnston
+    affiliation: PsiQuantum
+  - given-names: Jessica
+    family-names: Lemieux
+    affiliation: PsiQuantum
+  - given-names: Andrew
+    family-names: Litteken
+    affiliation: PsiQuantum
+  - given-names: Sam
+    family-names: Morley-Short
+    affiliation: PsiQuantum
+  - given-names: Mariia
+    family-names: Mykhailova
+    affiliation: PsiQuantum
+  - given-names: Olga
+    family-names: Okrut
+    affiliation: PsiQuantum
+  - given-names: Sam
+    family-names: Pallister
+    affiliation: PsiQuantum
+  - given-names: William
+    family-names: Pol
+    affiliation: PsiQuantum
+  - given-names: Vincent
+    family-names: Russo
+    affiliation: PsiQuantum
+  - given-names: Sukin
+    family-names: Sim
+    affiliation: PsiQuantum
+  - given-names: William
+    family-names: Simon
+    affiliation: PsiQuantum
+  - given-names: Michał
+    family-names: Stęchły
+    affiliation: PsiQuantum
+  - given-names: Gideon
+    family-names: Uchehara
+    affiliation: PsiQuantum
+  - given-names: Trevor
+    family-names: Vincent
+    affiliation: PsiQuantum
+version: 2.0.0
+date-released: 2026-03-29
+repository-code: 'https://github.com/PsiQ/psiqdk/'
+abstract: >-
+  The PsiQuantum Development Kit: Python libraries for
+  designing, compiling, and estimating quantum algorithms.
+keywords:
+  - Python
+  - quantum computing
+  - quantum algorithms
+  - quantum simulation
+license: Apache-2.0
