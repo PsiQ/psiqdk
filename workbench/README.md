@@ -20,7 +20,7 @@ This folder contains the **tutorial notebooks** that accompany the official Work
 
 ## Documentation
 
-[Full Workbench documentation](https://construct.psiquantum.com/docs/psiq_workbench/index.html).
+[Full Workbench documentation](https://construct.psiquantum.com/docs/psiqdk-workbench/index.html).
 
 ## Installation
 
