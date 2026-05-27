@@ -2,7 +2,7 @@
 
 Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at fault-tolerant quantum computers.
 
-PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate estimate the cost of running it on fault-tolerant hardware, and visualize the results.
+PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate the cost of running it on fault-tolerant hardware, and visualize the results.
 
 ## What's in PsiQDK?
 
@@ -55,9 +55,9 @@ PsiQuantum officially supports the **current stable** release of PsiQDK. Older r
 
 ## Feedback and contributing
 
-At this point, PsiQDK is an open-access project rather than an open-source project: you're most welcome to start experimenting with it, but there is no easy way for us to accept external contributions. We are working towards bringing PsiQDK into open source.
+PsiQDK is an open-access, but we are working to turn it into an open-source project. Because of this, there is not direct way for us to accept external contributions to the repository. 
 
-That being said, we welcome bug reports, feature requests, and discussions! Please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question or discuss a topic.
+To communicay any feedback (including bug reports, feature requests, and discussions),please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question or discuss a topic.
 
 ## License
 
