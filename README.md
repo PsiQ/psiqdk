@@ -51,7 +51,7 @@ psiqdk --verify
 
 ## Support policy
 
-PsiQuantum officially supports the **current Stable** release of PsiQDK. Older releases are best-effort only.
+PsiQuantum officially supports the **current stable** release of PsiQDK. Older releases are best-effort only.
 
 ## Feedback and contributing
 
