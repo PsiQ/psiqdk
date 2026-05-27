@@ -2,7 +2,7 @@
 
 Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at fault-tolerant quantum computers.
 
-PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate its cost on fault-tolerant hardware, and visualize the results.
+PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate estimate the cost of running it on fault-tolerant hardware, and visualize the results.
 
 ## What's in PsiQDK?
 
