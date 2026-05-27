@@ -6,7 +6,7 @@ This folder contains the **tutorial notebooks** for the Algorithms library.
 
 ## Documentation
 
-[Full Algorithms documentation](https://open-docs.construct.psiquantum.com/workbench_algorithms/index.html).
+[Full Algorithms documentation](https://construct.psiquantum.com/docs/psiqdk-algorithms/index.html).
 
 ## Installation
 
