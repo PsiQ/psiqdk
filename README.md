@@ -39,7 +39,7 @@ psiqdk --verify
 
 - **Official documentation**: <https://open-docs.construct.psiquantum.com/>
 - **Tutorials in this repository** - Jupyter notebooks that mirror the documentation:
-  - [Workbench tutorials](./workbench/tutorials) - gates, qubit management, simulation, resource estimation, and the Qubricks framework.
+  - [Workbench tutorials](./workbench) - gates, qubit management, simulation, resource estimation, and the Qubricks framework.
   - [Algorithms tutorials](./algorithms/tutorials) - state preparation, amplitude amplification, phase estimation, arithmetic, QROM, and more.
   - [Visualization examples](./visualize) - interactive circuit and QRE viewers for Jupyter and VS Code.
   - [End-to-end examples](./e2e/tutorials) - full algorithm-design → implementation → resource-estimation workflows (Grover SAT solver, recursive state preparation).
