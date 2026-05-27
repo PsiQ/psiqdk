@@ -57,7 +57,7 @@ PsiQuantum officially supports the **current stable** release of PsiQDK. Older r
 
 PsiQDK is an open-access, but we are working to turn it into an open-source project. Because of this, there is not direct way for us to accept external contributions to the repository. 
 
-To communicay any feedback (including bug reports, feature requests, and discussions),please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question or discuss a topic.
+To share any feedback (including bug reports, feature requests, and discussions), please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question or discuss a topic.
 
 ## License
 
