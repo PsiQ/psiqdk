@@ -2,15 +2,15 @@
 
 End-to-end tutorials that walk through the **complete workflow** for developing a fault-tolerant quantum program with PsiQDK:
 
-1. **Algorithm design** - sketch the algorithm and draw its circuit using Circuit Designer.
+1. **Algorithm design** - sketch the algorithm and draw its circuit using [Circuit Designer](https://circuits.psiquantum.com/).
 2. **Implementation** - implement the algorithm in [Workbench](../workbench) and verify it via simulation.
 3. **Resource estimation** - analyze the cost of running the program on a fault-tolerant quantum computer.
 
-Each example is split into the three parts above so you can follow the same flow you would use for your own work.
+Each example is split into several parts, following the same workflow one would use for quantum application development.
 
 ## Documentation
 
-Full documentation: <https://open-docs.construct.psiquantum.com/>
+[End-to-end tutorials](https://construct.psiquantum.com/docs/construct/tutorials/stateprep_1_circuit.html).
 
 ## Prerequisites
 
@@ -22,30 +22,13 @@ pip install psiqdk
 
 ## Examples
 
-The [`tutorials/`](./tutorials) directory contains the following end-to-end examples.
+The [`tutorials/`](./tutorials) directory contains the following end-to-end examples:
 
-### Recursive quantum state preparation
+* Quantum state preparation - a textbook recursive algorithm that prepares an arbitrary multi-qubit state with real amplitudes.
+* Grover's search algorithm for solving Boolean satisfiability (SAT) problems.
 
-A textbook recursive algorithm that prepares an arbitrary real-amplitude state on `n` qubits.
+You can find the supporting circuit diagrams for the tutorials under [`tutorials/circuits/`](./tutorials/circuits).
 
-| Part | Notebook / file | Topic |
-| --- | --- | --- |
-| 1 | [stateprep_circuit.md](./tutorials/stateprep_circuit.md) | Algorithm design and circuit diagram. |
-| 2 | [stateprep_code.ipynb](./tutorials/stateprep_code.ipynb) | Workbench implementation and simulation. |
-| 3 | [stateprep_qre_analysis.ipynb](./tutorials/stateprep_qre_analysis.ipynb) | Resource estimation and analysis. |
+## Getting help
 
-### Grover's search for SAT
-
-Grover's search algorithm applied to Boolean satisfiability (SAT) problems, with a custom oracle.
-
-| Part | Notebook / file | Topic |
-| --- | --- | --- |
-| 1 | [satsolver_circuit.md](./tutorials/satsolver_circuit.md) | Algorithm design and circuit diagram. |
-| 2 | [satsolver_code.ipynb](./tutorials/satsolver_code.ipynb) | Workbench implementation and simulation. |
-| 3 | [satsolver_qre.ipynb](./tutorials/satsolver_qre.ipynb) | Resource estimation and analysis. |
-
-Supporting circuit diagrams and media live under [`tutorials/circuits/`](./tutorials/circuits) and [`tutorials/media/`](./tutorials/media).
-
-## Feedback
-
-Report issues at <https://github.com/PsiQ/psiqdk/issues/new/>.
+Please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question.

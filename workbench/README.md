@@ -1,20 +1,26 @@
-# PsiQ Workbench
+# Workbench
 
-**Workbench** is a Python framework for writing, simulating, and resource-estimating quantum programs. It pairs a programmer-centric Python API with an optimized multi-threaded C++ simulation backend, and the same API is designed to one day target PsiQuantum's photonic QPU.
+**Workbench** is a Python package designed for efficient writing and execution of quantum programs. It allows developers to create quantum circuits and algorithms using Python, while leveraging the performance of an optimized, multi-threaded C++ core.
 
-This folder contains the **public tutorial notebooks** that accompany the official Workbench documentation.
+This folder contains the **tutorial notebooks** that accompany the official Workbench documentation.
 
-## Highlights
+## Features
 
-- **Fast** - a multi-CPU-optimized native simulator written in C++.
-- **Programmer-centric** - a Python API co-designed by quantum researchers and software engineers, with familiar control flow, data types, and abstractions.
-- **Extensible** - modular pipeline for snap-on compilation and analysis steps.
-- **Fully-featured** - elementary gates, controlled and multi-controlled operations, measurements, classical control, arithmetic, and the [Qubricks](https://open-docs.construct.psiquantum.com/) framework for structured qubit management and uncomputation.
-- **Resource estimation built in** - get symbolic and numeric estimates of the resources required to run a program on fault-tolerant hardware.
+- **FTQC Primitives**: Build with abstractions designed for fault-tolerant quantum computing, including quantum data types, mid-circuit measurements, and automatic uncompute.
+
+- **Built for Runtime**: Scale to large circuits and runtime-style execution with support for streaming billions of operations without relying on fixed kernels.
+
+- **Large Algorithm Library**: Access more than 100 interoperable, FTQC-focused algorithm implementations, including alias sampling, quantum phase estimation, and more.
+
+- **Quantum Resource Estimates (QREs)**: Generate accurate QREs for circuits of any size, including circuits with billions of gates, and analyze results with Resource Analyzer, Bartiq, or the Resource Estimator.
+
+- **Hardware Agnostic**: Write, compile, and optimize quantum algorithms for a range of FTQC hardware architectures. 
+
+- **Highly Performant Simulation**: Iterate quickly with optimized C++ simulation, including native bit and Clifford simulators as well as GPU-powered tensor-network and state-vector simulation via CUDA-Q.
 
 ## Documentation
 
-Full documentation: <https://open-docs.construct.psiquantum.com/>
+[Full Workbench documentation](https://construct.psiquantum.com/docs/psiqdk-workbench/index.html).
 
 ## Installation
 
@@ -27,75 +33,13 @@ pip install psiqdk
 Workbench is then available under the `psiqdk.workbench` namespace:
 
 ```python
-from psiqdk.workbench import QPU
+from psiqdk.workbench import ...
 ```
 
 ## Tutorials
 
-The [`tutorials/`](./tutorials) directory contains runnable Jupyter notebooks covering the full breadth of Workbench. They are organized below by topic.
+The [`tutorials/`](./tutorials) directory contains runnable Jupyter notebooks (the notebooks used to generate the documentation pages).
 
-### Getting started
+## Getting help
 
-| Notebook | Description |
-| --- | --- |
-| [Basic-Gates.ipynb](./tutorials/Basic-Gates.ipynb) | Single-qubit gates and the basics of building a circuit. |
-| [Controlled-Gates.ipynb](./tutorials/Controlled-Gates.ipynb) | Controlled and multi-controlled operations. |
-| [Advanced-Gates.ipynb](./tutorials/Advanced-Gates.ipynb) | Higher-level gate constructs and patterns. |
-| [Measurements.ipynb](./tutorials/Measurements.ipynb) | Measurement operations and classical outcomes. |
-| [QPU-Object.ipynb](./tutorials/QPU-Object.ipynb) | The `QPU` object: lifecycle, state, and execution. |
-| [Qubits-Data-Type.ipynb](./tutorials/Qubits-Data-Type.ipynb) | Working with qubits and qubit registers as first-class values. |
-
-### Simulation, execution, and debugging
-
-| Notebook | Description |
-| --- | --- |
-| [Simulating-WB-Programs.ipynb](./tutorials/Simulating-WB-Programs.ipynb) | Running Workbench programs in simulation. |
-| [Configuring-Execution.ipynb](./tutorials/Configuring-Execution.ipynb) | Tuning the simulator and selecting execution modes. |
-| [Testing-Debugging.ipynb](./tutorials/Testing-Debugging.ipynb) | Patterns for writing tests and debugging quantum programs. |
-
-### Qubricks - structured qubit management
-
-| Notebook | Description |
-| --- | --- |
-| [Qubricks.ipynb](./tutorials/Qubricks.ipynb) | Introduction to the Qubricks framework. |
-| [Built-in-Qubricks.ipynb](./tutorials/Built-in-Qubricks.ipynb) | A tour of the built-in Qubrick library. |
-| [Qubricks-Qubit-Management.ipynb](./tutorials/Qubricks-Qubit-Management.ipynb) | Allocating, scoping, and releasing qubits. |
-| [Qubricks-Controlled.ipynb](./tutorials/Qubricks-Controlled.ipynb) | Building controlled Qubricks. |
-| [Qubricks-Uncomputation.ipynb](./tutorials/Qubricks-Uncomputation.ipynb) | Uncomputation patterns and ancilla cleanup. |
-| [Qubricks-Computed-Context-Manager.ipynb](./tutorials/Qubricks-Computed-Context-Manager.ipynb) | The `computed` context manager for safe scratch use. |
-
-### Quantum arithmetic
-
-| Notebook | Description |
-| --- | --- |
-| [Quantum-Arithmetic.ipynb](./tutorials/Quantum-Arithmetic.ipynb) | Arithmetic on quantum registers. |
-| [Quantum-Arithmetic-Data-Types.ipynb](./tutorials/Quantum-Arithmetic-Data-Types.ipynb) | Integer and fixed-point quantum data types. |
-| [QRE-Analysis-for-Arithmetic-Variants.ipynb](./tutorials/QRE-Analysis-for-Arithmetic-Variants.ipynb) | Comparing resource costs across arithmetic implementations. |
-
-### Resource estimation
-
-| Notebook | Description |
-| --- | --- |
-| [Resource-Estimates-Basic-Numerics.ipynb](./tutorials/Resource-Estimates-Basic-Numerics.ipynb) | Numerical resource estimates for fault-tolerant execution. |
-
-## Validating your installation
-
-Run the following Python snippet to confirm Workbench is installed correctly:
-
-```python
-from psiqdk.workbench import QPU
-
-qpu = QPU(num_qubits=2)
-qpu.print_state_vector()
-```
-
-Expected output:
-
-```text
-State vector:
-  |0> (1, 0)
-```
-
-## Feedback
-
-Report issues at <https://github.com/PsiQ/psiqdk/issues/new/>.
+Please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question.
