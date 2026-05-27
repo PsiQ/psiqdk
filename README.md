@@ -9,7 +9,7 @@ PsiQDK bundles the core components you need to write a quantum program, simulate
 | Component | Purpose |
 | --- | --- |
 | **[Workbench](./workbench)** | A Python framework with an optimized C++ backend for writing and simulating quantum programs and perform resource estimation. |
-| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, data loading, and more. |
+| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, data loading, Hamiltonian simulation, and more. |
 | **[Visualize](./visualize)** | Jupyter widgets and editor integrations for inspecting circuits and resource-estimation reports. |
 | **[End-to-end examples](./e2e)** | Full workflows that combine circuit design, implementation, simulation, and resource estimation on real algorithms. |
 
