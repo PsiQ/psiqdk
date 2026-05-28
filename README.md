@@ -1,17 +1,16 @@
 # PsiQuantum Development Kit (PsiQDK)
 
-Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at PsiQuantum's fault-tolerant photonic quantum computer.
+Welcome to the **PsiQuantum Development Kit** - an integrated set of Python packages for designing, simulating, and analyzing quantum programs targeted at fault-tolerant quantum computers.
 
-PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate its cost on fault-tolerant hardware, and visualize the results - all under a single, version-aligned distribution.
+PsiQDK bundles the core components you need to write a quantum program, simulate it, estimate the cost of running it on fault-tolerant hardware, and visualize the results.
 
 ## What's in PsiQDK?
 
 | Component | Purpose |
 | --- | --- |
-| **[Workbench](./workbench)** | A Python framework with an optimized C++ backend for writing and simulating quantum programs, plus symbolic resource estimation. |
-| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, QROM, and more. |
+| **[Workbench](./workbench)** | A Python framework with an optimized C++ backend for writing and simulating quantum programs and perform resource estimation. |
+| **[Algorithms](./algorithms)** | A growing library of reusable quantum algorithm primitives - state preparation, arithmetic, phase estimation, data loading, Hamiltonian simulation, and more. |
 | **[Visualize](./visualize)** | Jupyter widgets and editor integrations for inspecting circuits and resource-estimation reports. |
-| **[End-to-end examples](./e2e)** | Full workflows that combine circuit design, implementation, simulation, and resource estimation on real algorithms. |
 
 ## Installation
 
@@ -33,12 +32,10 @@ Once installed, verify the installation:
 
 ```bash
 psiqdk --version
-psiqdk --verify
 ```
 
 ## Documentation and examples
 
-- [Official documentation](https://construct.psiquantum.com/docs)
 - **Tutorials in this repository** - Jupyter notebooks that mirror the documentation and can be run end-to-end:
   - [Workbench tutorials](./workbench/tutorials) - gates, qubit management, simulation, resource estimation, and the Qubricks framework.
   - [Algorithms tutorials](./algorithms/tutorials) - state preparation, amplitude amplification, phase estimation, arithmetic, QROM, and more.
@@ -48,15 +45,17 @@ psiqdk --verify
 ## Other learning resources
 
 - **[Workbench Quantum Katas](https://github.com/PsiQ/workbench-quantum-katas)** - a hands-on collection of tutorials and programming exercises that teach quantum computing and quantum programming, from basic concepts to fault-tolerant applications such as quantum chemistry.
-- **[Quantum Programming in Depth](https://github.com/tcNickolas/quantum-programming-in-depth)** - side-by-side code samples in three quantum development toolkits: Workbench, Q#, and Qiskit.
+- **[Quantum Programming in Depth](https://github.com/tcNickolas/quantum-programming-in-depth)** - side-by-side code samples in three quantum development toolkits: Workbench, Q#, and Qiskit from the book [Quantum Programming in Depth](https://www.oreilly.com/library/view/quantum-programming-in/9781633436909/) written by Mariia Mykhailova.
 
 ## Support policy
 
-PsiQuantum officially supports the **current Stable** release of PsiQDK. Older releases are best-effort only.
+PsiQuantum officially supports the **current stable** release of PsiQDK. Older releases are best-effort only.
 
 ## Feedback and contributing
 
-We welcome bug reports, feature requests, and discussion. Please file a [new issue](https://github.com/PsiQ/psiqdk/issues/new/) on this repository.
+PsiQDK is an open-access, but we are working to turn it into an open-source project. Because of this, there is not direct way for us to accept external contributions to the repository. 
+
+To share any feedback (including bug reports, feature requests, and discussions), please [file an issue](https://github.com/PsiQ/psiqdk/issues/new/) to report a bug or to request a feature, or [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) to ask a question or discuss a topic.
 
 ## License
 
