@@ -1,0 +1,80 @@
+name: Bug report
+description: Report something that isn't working as expected in PsiQDK.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report! Please fill out the sections below so we can reproduce and investigate the issue.
+
+        If you have a usage question rather than a bug, please [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose) instead.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of PsiQDK is affected?
+      options:
+        - Workbench
+        - Algorithms
+        - Visualize
+        - End-to-end examples (e2e)
+        - Installation / meta-package
+        - Documentation
+        - Not sure / other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Steps or a minimal code snippet that reproduces the behavior.
+      placeholder: |
+        1. ...
+        2. ...
+
+        ```python
+        # minimal reproducible example
+        ```
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened? Include the full error message or traceback if there is one.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: PsiQDK version (output of `psiqdk --version`), Python version, and operating system.
+      value: |
+        - PsiQDK version:
+        - Python version:
+        - Operating system:
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other context, screenshots, or logs.
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions & discussions
+    url: https://github.com/PsiQ/psiqdk/discussions/new/choose
+    about: Have a usage question or want to discuss an idea? Start a discussion instead of opening an issue.
+  - name: Documentation
+    url: https://construct.psiquantum.com/docs
+    about: Browse the PsiQDK documentation before filing an issue.
