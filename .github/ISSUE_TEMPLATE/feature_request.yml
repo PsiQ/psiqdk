@@ -1,0 +1,54 @@
+name: Feature request
+description: Suggest a new feature or improvement for PsiQDK.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement! Please describe what you'd like to see and why.
+
+        For open-ended ideas or questions, you may prefer to [start a discussion](https://github.com/PsiQ/psiqdk/discussions/new/choose).
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      description: Which part of PsiQDK does this relate to?
+      options:
+        - Workbench
+        - Algorithms
+        - Visualize
+        - End-to-end examples (e2e)
+        - Installation / meta-package
+        - Documentation
+        - Not sure / other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What problem are you trying to solve? What is the use case?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the feature or change you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or workarounds you've considered.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Any other context, references, or examples.
+    validations:
+      required: false
