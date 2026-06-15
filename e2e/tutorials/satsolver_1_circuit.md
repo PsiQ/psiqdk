@@ -37,7 +37,7 @@ Given these two subroutines, Grover's algorithm implementation for a specific pr
 
 Let's start by drawing this algorithm as a generic quantum circuit diagram. Then, we'll talk about implementing it for our example of SAT problems.
 
-> You can find the complete circuit diagram for Grover's search algorithm built in the first part of this tutorial [on Circuit Hub](https://github.com/PsiQ/circuit-hub/blob/main/psiq-tutorial-circuits/grover-search.circuit.json).
+> You can find the complete circuit diagram for Grover's search algorithm built in the first part of this tutorial [in Circuit Designer](https://construct.psiquantum.com/cd/https://github.com/PsiQ/circuit-hub/raw/main/psiq-tutorial-circuits/grover-search.circuit.json).
 
 
 ## Drawing the circuit diagram: Grover's search

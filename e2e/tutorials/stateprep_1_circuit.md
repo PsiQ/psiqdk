@@ -32,7 +32,7 @@ Finally, if we know how to prepare an arbitrary state on $n-1$ qubits, we can us
 
 Let's start by expressing this algorithm as a quantum circuit diagram.
 
-> You can find the complete circuit diagram for recursive state preparation built in this tutorial [on Circuit Hub](https://github.com/PsiQ/circuit-hub/blob/main/psiq-tutorial-circuits/recursive-state-preparation.circuit.json).
+> You can find the complete circuit diagram for recursive state preparation built in this tutorial [in Circuit Designer](https://construct.psiquantum.com/cd/https://github.com/PsiQ/circuit-hub/raw/main/psiq-tutorial-circuits/recursive-state-preparation.circuit.json).
 
 ## Drawing the circuit diagram
 
