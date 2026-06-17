@@ -154,3 +154,4 @@ The result will look similar to this diagram:
 In this tutorial, we explored the structure of the recursive state preparation algorithm and designed its circuit diagram using Circuit Designer.
 
 In the [next part of this tutorial](./stateprep_2_code.ipynb), we will implement this algorithm in Workbench and test that our implementation is correct!
+
