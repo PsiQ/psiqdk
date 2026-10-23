@@ -3,11 +3,12 @@
 
 In this tutorial, we will continue learning to develop quantum programs using Construct. This time, we'll implement a more complex algorithm: Grover's search algorithm for solving Boolean satisfiability (SAT) problems.
 
-This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm:
+This tutorial consists of three parts that follow the typical workflow of developing and evaluating a quantum algorithm and a fourth bonus part:
 
 * In part 1, we will define generic Grover's search algorithm and the oracle for SAT problems and draw circuit diagrams for both using [Circuit Designer](https://circuits.psiquantum.com/).
 * In part 2, we will implement the algorithm and test it using Workbench.
-* Finally, in part 3, we will analyze the performance of our program using Resource Analyzer.
+* In part 3, we will analyze the performance of our program using Resource Analyzer.
+* Bonus part 4, we will create interactive circuit diagrams using Circuit Designer.
 
 ## Grover's search algorithm
 
